@@ -111,3 +111,12 @@ Every time the prompt is run and the user confirms or requests a JPG/JPEG infogr
 The default style uses a warm off-white background, dark navy typography, generous whitespace, thin dividers, a stable editorial grid, blue current-profile data, pink/magenta target data, a radar chart, aligned competency score bars, three key insight columns, a current-to-next-level transition, a three-horizon development roadmap, and a restrained closing recommendation.
 
 The visual design may be reused, but **reference-image content must never be copied**: names, dates, scores, targets, and claims must come from the subject's verified information and the written assessment. The prompt requires a real JPEG/JPG export when supported by available image-conversion tools; file extensions must never be used to misrepresent a PNG as JPEG.
+
+
+## Permanent default JPG style
+
+Every time the canonical prompt is run and the user confirms or requests a JPG/JPEG infographic, it defaults to the reference's restrained editorial report style. No repeated style choice is required.
+
+The layout is stable: verified personal header and assessment date; report title and overall score; radar comparison and eight aligned competency rows; three key insights; current-to-next-level transition; short-, medium-, and long-term development roadmap; and a quiet closing recommendation. The visual uses a warm off-white canvas, deep navy typography, blue current data, magenta targets, subtle green strengths, thin dividers, a strict grid, and generous whitespace.
+
+Only the reference's visual style may be reused. Never copy sample names, dates, scores, or claims. All data must match the written assessment. The prompt requires actual JPEG conversion when supported and prohibits renaming a PNG file to `.jpg`.
