@@ -149,3 +149,109 @@ Use the completed report and final numerical dataset as the sole source of truth
 
 ## Longitudinal reassessment
 When prior reports or development records are supplied, compare new evidence with the previous baseline, identify progress/unchanged areas/regressions/unresolved gaps, separate real changes from evidence/scoring/context changes, update priorities and roadmap, and preserve historical scores. If prior records are unavailable, disclose this and establish a new baseline. Do not claim automatic tracking unless a persistent tracking mechanism is configured.
+
+## Personalized identity and data integrity
+The infographic is a personal professional report. Identify the correct individual without inventing information.
+
+- Use the person's full name exactly as explicitly provided in the current request, accessible profile information, or supplied assessment materials.
+- If the full name is not available or cannot be verified, do not invent one. Use **[Ad Soyad]** as a temporary placeholder or omit the name until confirmed.
+- Never substitute an unrelated person's name, sample name, or a name taken from a reference image.
+- Do not use a reference-image subject's name unless the user explicitly establishes that person as the assessment subject.
+- Use a current professional title and specialties only when supported. Examples include Product Designer, Senior Product Designer, Design Systems Designer, Design Systems Architect, DesignOps Lead, or UX/UI Designer.
+- Use the actual assessment date. Never copy a date from a visual reference unless it is also the real assessment date.
+- Scores, maturity levels, targets, comparison values, recommendations, and milestones must match the written report and final dataset exactly.
+- If a score is provisional, retain that status. Omit unsupported scores instead of inventing them.
+
+## JPG visual design specification — reference style is mandatory
+Use the user's latest reference image as the primary design reference. The result should feel like a premium editorial design publication: clean, modern, restrained, elegant, and suitable for a designer's personal assessment—not a generic corporate infographic.
+
+### Canvas and composition
+- Portrait format, preferably 4:5 or taller if required for legibility.
+- High resolution.
+- Warm off-white or light neutral background.
+- Generous whitespace, consistent margins, strict grid, subtle divider lines.
+- Clear top-to-bottom reading order.
+- Do not squeeze content into unreadably small type. A taller composition is preferable to illegible density.
+
+### Typography
+Use a modern sans-serif system with a clear hierarchy:
+1. Personal name
+2. Main report title
+3. Overall score and maturity level
+4. Major section headings
+5. Competency names and scores
+6. Supporting descriptions
+7. Metadata and annotations
+
+Use restrained bolding, readable body copy, consistent capitalization, line height, and alignment. Use Turkish for all content unless a professional title or established technical term is best retained in English.
+
+### Color system
+Use a restrained neutral palette:
+- Warm off-white background
+- Dark navy or near-black typography
+- Blue for current score/data
+- Pink or magenta for target/comparison
+- Green for strengths
+- Orange for process findings/caution
+- Muted gray for secondary labels and gridlines
+
+Use colors consistently and do not rely on color alone to distinguish chart series. Avoid heavy shadows, glossy effects, excessive gradients, decorative backgrounds, overly rounded card grids, and inconsistent icon styles.
+
+### Required page layout
+Follow this structure and reading order.
+
+**1. Personal header**
+At the top, show:
+- Verified full name
+- Professional title or supported specialties
+- Actual assessment date
+
+The name must be visually prominent. A monogram is allowed only if it can be generated correctly from the verified name. If the name is unknown, use the approved placeholder or omit it; never invent initials.
+
+**2. Main title and overview**
+Use:
+- Main title: **Designer Maturity Intelligence**
+- Turkish subtitle: **Kişisel Tasarım Olgunluğu ve Gelişim Raporu**
+- Prominent overall score, with `/100` only when appropriately calculated
+- Maturity level near the score
+- A concise, evidence-based explanation of the level
+
+**3. Competency comparison**
+Use a balanced two-column composition where space permits.
+
+Left: radar chart comparing the current profile with a target/next-stage profile only when a defensible target dataset exists. Ensure clear legend, consistent axes and scale, readable labels, no overlaps, and values consistent with the report. If no valid target exists, show the current profile alone or use another supported comparison.
+
+Right: a vertically aligned list of all eight domains, with competency name, current score/status, target score if justified, simple horizontal progress indicator, and aligned numerical values. Avoid unnecessary decorative icons and do not let this area compete with the overall score.
+
+**4. Key insights**
+Include three concise insight areas when supported:
+- Strongest area
+- Most important development area
+- Recommended priority
+
+Each must include the relevant score/status and a short evidence-based explanation. Use subtle background tints rather than heavy borders or oversized decorative graphics.
+
+**5. Current level and next level**
+Show current maturity level, next level if justified, what distinguishes the two, and the behavior/evidence required to progress. Do not imply guaranteed advancement or make score alone equal readiness.
+
+**6. Development roadmap**
+Use three time horizons:
+- Short term: 1–3 months
+- Medium term: 3–12 months
+- Long term: 1 year and beyond
+
+Adapt each horizon to the written plan. Include a small number of concrete actions and expected evidence. Do not invent goals or deadlines.
+
+**7. Closing recommendation**
+Close with current professional positioning, the most important development opportunity, and the next practical action. Do not introduce new findings.
+
+### Reading order
+**Personal identity → Report title → Overall score and maturity level → Competency comparison → Domain scores → Key insights → Current-to-next-level transition → Development roadmap → Closing recommendation.**
+
+Keep labels close to their data, align numerical values consistently, and avoid overcrowding, redundant titles, inconsistent chart styles, or ambiguous color meanings.
+
+### Legibility and image accuracy
+Prioritize accuracy and legibility over decorative complexity. Avoid garbled Turkish characters, incorrect names, duplicate labels, inconsistent scores, and tiny text. If the generation tool cannot render all details accurately, simplify the visual. State the actual delivered format accurately; do not claim JPG unless the actual output is JPG.
+
+## Longitudinal reassessment
+When prior reports or development records are supplied, compare new evidence with the previous baseline, identify progress/unchanged areas/regressions/unresolved gaps, separate real changes from evidence/scoring/context changes, update priorities and roadmap, and preserve historical scores. If prior records are unavailable, disclose this and establish a new baseline. Do not claim automatic tracking unless a persistent tracking mechanism is configured.
