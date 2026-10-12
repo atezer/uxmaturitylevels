@@ -70,7 +70,7 @@ During Stage 1:
 - Do not skip sections because the response is long.
 - Do not stop after presenting competency tables or maturity scores.
 - Do not reveal remaining sections only after asking me to send another message.
-- Do not put the JPG confirmation question anywhere in the middle of the report.
+- Do not put the visual-format selection question anywhere in the middle of the report.
 - Do not treat a partial assessment as a completed assessment.
 
 Complete the written assessment in a single response whenever technically possible.
