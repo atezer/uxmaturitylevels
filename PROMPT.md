@@ -46,7 +46,7 @@ Use the information legitimately available in the current conversation, relevant
 
 Do not invent professional achievements, project outcomes, metrics, responsibilities, or experiences.
 
-**The complete written assessment and personal development plan are the primary deliverables. The JPG infographic is a separate, subsequent deliverable.**
+**The complete written assessment and personal development plan are the primary deliverables. The selected visual artifact—JPG infographic (A) or interactive HTML dashboard (B)—is a separate, subsequent deliverable.**
 
 # 2. MANDATORY EXECUTION PROTOCOL
 
@@ -70,7 +70,7 @@ During Stage 1:
 - Do not skip sections because the response is long.
 - Do not stop after presenting competency tables or maturity scores.
 - Do not reveal remaining sections only after asking me to send another message.
-- Do not put the JPG confirmation question anywhere in the middle of the report.
+- Do not put the visual-format selection question anywhere in the middle of the report.
 - Do not treat a partial assessment as a completed assessment.
 
 Complete the written assessment in a single response whenever technically possible.
@@ -81,19 +81,17 @@ Do not repeat completed sections unnecessarily when continuing.
 
 **The user must be able to read the full written assessment and development system before being asked to make any decision about the visual.**
 
-## STAGE 2 — FINAL JPG CONFIRMATION
+## STAGE 2 — FINAL VISUAL FORMAT SELECTION
 
-Only after every required written section has been completed, present the final image-generation confirmation question.
+Only after every required written section has been completed, present the final visual-format selection question with options A and B.
 
-The question must appear at the absolute bottom of the final written-assessment response, after all conclusions, limitations, recommendations, development-system details, and the final numerical dataset.
+The question and both options must appear at the absolute bottom of the final written-assessment response, after all conclusions, limitations, recommendations, development-system details, and the final numerical dataset.
 
 Do not place any additional report sections after the question.
 
-Do not generate the image until I confirm.
+Do not generate either artifact until I select A or B.
 
-There is only one visual output option: a JPG infographic.
-
-Do not offer HTML or alternative visual formats.
+There are exactly two visual output options: A — JPG infographic and B — interactive HTML dashboard. Do not offer additional formats.
 
 # 3. EVIDENCE COLLECTION AND INTERPRETATION
 
@@ -1120,7 +1118,7 @@ Do not claim that the assessment is complete if required sections are missing.
 
 Do not ask the user to continue unless a genuine technical limitation makes continuation unavoidable.
 
-# 12. STAGE 2 — FINAL JPG CONFIRMATION QUESTION
+# 12. STAGE 2 — FINAL VISUAL FORMAT SELECTION
 
 **This section may be executed only after Stage 1 is fully complete.**
 
@@ -1134,15 +1132,15 @@ Do not ask it after presenting only a summary.
 
 Use this exact Turkish wording:
 
-## Yazılı değerlendirme ve kişisel gelişim planı tamamlandı. Şimdi görsel profilini oluşturmamı ister misin?
+## Yazılı değerlendirme ve kişisel gelişim planı tamamlandı. Şimdi hangi görsel formatını hazırlamamı istersin?
 
-Yukarıdaki değerlendirmeyi ve gelişim planını tamamen okuduktan sonra seçimini yapabilirsin.
+Yukarıdaki değerlendirmeyi ve gelişim planını tamamen okuduktan sonra seçeneklerden birini seçebilirsin.
 
-**A — JPG Infografik oluştur**
+### A — JPG Infografik oluştur
 
-- Yüksek çözünürlüklü, dikey infografik
-- Genel profesyonel olgunluk seviyesi
-- Sekiz yetkinlik alanının puanları
+- Referans görseldeki sade ve zarif editoryal tasarım dilinde yüksek çözünürlüklü dikey infografik
+- Genel profesyonel olgunluk profili
+- Sekiz yetkinlik alanının desteklenen puanları ve kanıt durumları
 - Thinking / Execution / Impact karşılaştırması
 - Güçlü yönler ve gelişim alanları
 - Profesyonel konumlandırma
@@ -1150,17 +1148,29 @@ Yukarıdaki değerlendirmeyi ve gelişim planını tamamen okuduktan sonra seçi
 - 30/60/90 günlük gelişim yol haritası
 - Okunaklı tipografi ve tutarlı görsel hiyerarşi
 
-Henüz görsel üretme. Önce bu soruyu sor ve yanıtımı bekle.
+### B — Etkileşimli HTML Dashboard oluştur (Claude ile daha iyi sonuç verir)
 
-After presenting this question, stop and wait for my selection.
+- Kişiye özel ve responsive etkileşimli dashboard
+- Genel olgunluk özeti ve sekiz yetkinlik alanı
+- Thinking / Execution / Impact karşılaştırmaları
+- Puanların, kanıtların ve güven düzeylerinin ayrıntılı görünümü
+- Güçlü yönler, gelişim öncelikleri ve 30/60/90 günlük yol haritası
+- Detayları açıp kapatabilen bölümler ve okunaklı veri görselleştirmeleri
+- Mümkün olduğunda tek bir HTML dosyası olarak çalışabilen, dış bağımlılıkları en aza indirilmiş çıktı
 
-If I confirm, proceed directly to image generation. Do not ask me to select another format or repeat the confirmation.
+*(Not: Etkileşimli HTML seçeneği Claude ile kullanıldığında daha iyi sonuç verebilir.)*
 
-If I decline, do not generate the image.
+Henüz JPG veya HTML üretme. Önce bu soruyu sor ve yanıtımı bekle. Kullanıcı A veya B seçtiğinde yalnızca seçilen çıktıyı oluştur.
+
+After presenting this question, stop and wait for the user's selection.
+
+If the user selects A, generate the JPG according to the JPG generation requirements.
+
+If the user selects B, create and deliver the HTML dashboard according to the HTML dashboard generation requirements. Do not generate both outputs unless the user explicitly asks for both.
 
 # 13. JPG GENERATION REQUIREMENTS
 
-After I confirm that I want the infographic, create an actual image using the available image-generation capability.
+When the user selects option A, create an actual image using the available image-generation capability.
 
 Do not provide only an image prompt, source code, a textual description, a dashboard, or a placeholder.
 
@@ -1205,6 +1215,38 @@ Do not claim that the output is JPG unless the actual output format supports tha
 
 Do not claim that the artifact has been generated until the tool has actually created it.
 
+# 13B. HTML DASHBOARD GENERATION REQUIREMENTS — OPTION B ONLY
+
+If the user selects **B — Etkileşimli HTML Dashboard oluştur**, create and deliver an actual working HTML artifact. Do not merely describe the dashboard or provide a prompt.
+
+- Use the completed written assessment and Section 13 final numerical dataset as the single source of truth.
+- Build a responsive, accessible, readable dashboard with a strong information hierarchy.
+- Include the overall maturity status, all eight competency domains, available Thinking/Execution/Impact scores, confidence and evidence status, strengths, development priorities, current-to-next-level expectations where supported, and the 30/60/90-day roadmap.
+- Use interactive sections to let the reader inspect evidence, scoring rationales, limitations, and development actions without overcrowding the initial view.
+- Preserve null and provisional scores. Never invent values to fill charts.
+- Keep all displayed values consistent with the written report and final numerical dataset.
+- Prefer one self-contained HTML file with inline CSS and JavaScript when feasible. Minimize external dependencies; disclose any required library, network access, or environment limitation.
+- **Claude is the recommended option for this HTML workflow because it may handle interactive HTML artifacts more reliably.** This is a recommendation, not a guarantee that every platform can execute or host HTML correctly.
+- Do not claim the HTML was tested unless it was actually opened or otherwise verified in a browser/runtime.
+- Deliver the actual HTML file or a working artifact link when the environment supports file delivery. Do not return HTML source in prose as a substitute when a file can be created.
+- If the user selects B, do not also generate a JPG unless they explicitly request both.
+
+## HTML quality gate
+
+Before delivery, verify where the environment permits:
+
+- The HTML file exists and contains the complete dashboard rather than a placeholder.
+- The identity, scores, labels, and roadmap match the final dataset.
+- Charts and interactive sections have valid data and clear empty/provisional states.
+- Layout is responsive and readable at common desktop and mobile widths.
+- Controls have meaningful labels and work as advertised.
+- Text contrast and keyboard accessibility have been considered.
+- Dependencies and testing limitations are disclosed.
+
+If browser execution is unavailable, do not claim browser testing; validate the file contents and disclose what could not be tested.
+
+---
+
 # 14. LONGITUDINAL REASSESSMENT AND CONTINUITY
 
 The assessment is intended to support ongoing development, not only a one-time evaluation.
@@ -1226,9 +1268,9 @@ The user may maintain continuity by saving the assessment, numerical dataset, an
 
 Do not claim that progress will be automatically tracked between conversations unless an actual persistent tracking mechanism is available and has been explicitly configured.
 
-# ADDITIONAL MANDATORY RULE — PERMANENT DEFAULT JPG VISUAL STYLE
+# ADDITIONAL MANDATORY RULE — PERMANENT DEFAULT JPG VISUAL STYLE (OPTION A ONLY)
 
-This section supplements the entire prompt above. It does not replace, shorten, or remove any assessment, scoring, personal-development, continuity, confirmation, or image-generation instructions.
+This section applies only when option A is selected; option B follows the HTML dashboard requirements. This section supplements the entire prompt above. It does not replace, shorten, or remove any assessment, scoring, personal-development, continuity, confirmation, or image-generation instructions.
 
 ## 1. Default behavior on every run
 
@@ -1322,13 +1364,13 @@ If a check fails, correct or simplify the image before delivery.
 
 ---
 
-# ADDITIONAL MANDATORY RULE — ACTUAL PERSONALIZED JPG RENDERING PIPELINE
+# ADDITIONAL MANDATORY RULE — ACTUAL PERSONALIZED JPG RENDERING PIPELINE (OPTION A ONLY)
 
-This section supplements all existing instructions. It does not replace, shorten, or remove any existing assessment, evidence, scoring, personal-development, longitudinal-tracking, visual-style, confirmation, or image-generation requirements.
+This section applies only when option A is selected; option B follows the HTML dashboard requirements. This section supplements all existing instructions. It does not replace, shorten, or remove any existing assessment, evidence, scoring, personal-development, longitudinal-tracking, visual-style, confirmation, or image-generation requirements.
 
 ## A. What must happen after confirmation
 
-When the user confirms with “A”, “A — JPG”, “evet”, “oluştur”, or another unambiguous confirmation, treat it as authorization to create the final infographic immediately.
+When the user selects option A or confirms JPG generation, treat that as authorization to create the final infographic immediately.
 
 Do not ask the user to restate the style, upload the same reference again, choose another format, or confirm a second time.
 
@@ -1427,11 +1469,9 @@ If any check fails, fix the artifact and inspect it again where possible. If a t
 
 The required sequence is:
 
-**Evidence analysis → Complete written assessment → Detailed competency scoring → Professional profile → Development priorities → Personal learning strategy → Behavior change plan → 30/60/90-day roadmap → Validation and evidence portfolio → Limitations and confidence → Final written conclusion → Final numerical dataset → Personal development operating system → Final JPG confirmation question → User confirmation → Actual image generation and delivery.**
+**Evidence analysis → Complete written assessment → Detailed competency scoring → Professional profile → Development priorities → Personal learning strategy → Behavior change plan → 30/60/90-day roadmap → Validation and evidence portfolio → Limitations and confidence → Final written conclusion → Final numerical dataset → Personal development operating system → Final A/B visual-format selection → User selects A or B → Generate only the selected artifact → Quality check and delivery.**
 
-There is only one visual output: the JPG infographic.
-
-Do not offer HTML, interactive dashboards, source code, or alternative visual formats.
+There are exactly two visual outputs: A — the JPG infographic, or B — the interactive HTML dashboard. Do not offer additional formats beyond these two options.
 
 Never allow the image-generation question to interrupt the written assessment.
 
@@ -1441,4 +1481,4 @@ Do not treat scores as permanent labels or guaranteed predictions of career succ
 
 The development plan must be evidence-based, personalized, sustainable, practical, and revisable.
 
-**My first deliverable is the complete written assessment and personal development plan. I must be able to read the entire report before seeing the final JPG confirmation question. Only after I confirm should you generate and deliver the infographic.**
+**My first deliverable is the complete written assessment and personal development plan. I must be able to read the entire report before seeing the final A/B visual-format question. Only after I select A or B should you generate and deliver the selected artifact.**
