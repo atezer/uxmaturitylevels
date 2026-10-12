@@ -252,6 +252,3 @@ Keep labels close to their data, align numerical values consistently, and avoid 
 
 ### Legibility and image accuracy
 Prioritize accuracy and legibility over decorative complexity. Avoid garbled Turkish characters, incorrect names, duplicate labels, inconsistent scores, and tiny text. If the generation tool cannot render all details accurately, simplify the visual. State the actual delivered format accurately; do not claim JPG unless the actual output is JPG.
-
-## Longitudinal reassessment
-When prior reports or development records are supplied, compare new evidence with the previous baseline, identify progress/unchanged areas/regressions/unresolved gaps, separate real changes from evidence/scoring/context changes, update priorities and roadmap, and preserve historical scores. If prior records are unavailable, disclose this and establish a new baseline. Do not claim automatic tracking unless a persistent tracking mechanism is configured.
