@@ -103,3 +103,23 @@ Track learning progress, behavioral progress, and outcome progress separately. C
 This repository publishes a professional development framework. Adapt it to your context, retain evidence and uncertainty labels, and do not present its scores as formal certification or objective industry ranking.
 
 Maintained by [@atezer](https://github.com/atezer).
+
+## Personalized infographic design
+
+The final visual follows a restrained editorial layout based on the project's reference design:
+
+1. **Personal header:** verified full name, supported professional title/specialties, and the actual assessment date.
+2. **Overview:** report title, overall maturity score (when supported), and maturity level.
+3. **Competency comparison:** radar chart only when a defensible comparison/target dataset exists, plus a clean aligned list of the eight competency domains.
+4. **Key insights:** strongest area, most important development area, and recommended priority.
+5. **Next level:** current maturity stage, next-stage expectations, and evidence needed to progress.
+6. **Development roadmap:** short-term, medium-term, and long-term actions.
+7. **Closing recommendation:** the next practical step grounded in the report.
+
+Visual direction: warm off-white background, modern sans-serif typography, generous whitespace, strict grid, subtle divider lines, dark navy/near-black text, blue for current data, pink/magenta for targets, green for strengths, orange for process findings, and muted gray for secondary information. Avoid dense card grids, excessive decoration, heavy shadows, and tiny text.
+
+### Personal and numerical data integrity
+
+The infographic must use the individual's verified name and actual assessment date. Never copy names or dates from a reference image, and never fabricate a name, initials, score, maturity level, target, or achievement. When the name is unavailable, use `[Ad Soyad]` as a placeholder or omit it until confirmed. All visual values must match the completed written assessment and final numerical dataset exactly. Unsupported scores should be omitted or explicitly marked provisional.
+
+The visual is generated only after all 15 written report sections are complete and the user explicitly confirms. The infographic is an additional deliverable, never a replacement for the full written assessment.
