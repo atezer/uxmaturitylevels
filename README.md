@@ -129,3 +129,13 @@ After the user confirms the visual, the prompt requires a new personalized artif
 For text-heavy charts and report layouts, deterministic HTML/CSS/SVG, Canvas, vector, document, or Python/PIL rendering is preferred when available. These are internal rendering methods; the deliverable remains the requested JPG/JPEG, not HTML source code.
 
 A PNG must be genuinely converted to JPEG with an available conversion tool before being labeled JPG. If conversion or image inspection is unavailable, the prompt requires the system to disclose the limitation rather than claim success.
+
+
+## Visual output options
+
+The complete written assessment and personal development plan are always delivered first. Only after all required sections are complete does the prompt ask the user to choose one visual deliverable:
+
+- **A — JPG infographic:** a high-resolution, portrait editorial infographic using the repository's canonical warm-neutral style.
+- **B — Interactive HTML dashboard (Claude recommended):** a responsive dashboard with competency scores, evidence/confidence details, development priorities, and the 30/60/90-day roadmap. The prompt notes that Claude may handle this HTML workflow more reliably; it does not guarantee identical support in every AI environment.
+
+The user receives only the selected format unless they explicitly request both. The report's canonical numerical dataset remains the single source of truth for either output. Stage 1 explicitly prohibits producing a visual before the written assessment is complete.
