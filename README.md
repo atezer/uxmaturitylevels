@@ -20,6 +20,16 @@ Use the [ChatGPT prompt starter](https://chatgpt.com/?q=Use%20the%20Designer%20M
 
 The ChatGPT starter pre-fills an instruction to load the canonical prompt. Depending on the chat product and its link-handling behavior, the user may still need to press Send and/or provide the prompt contents.
 
+## Scan to start
+
+Scan this QR code with your phone camera to open the canonical assessment prompt on GitHub.
+
+[![Designer Maturity Intelligence prompt QR code](https://api.qrserver.com/v1/create-qr-code/?size=320x320&margin=12&data=https%3A%2F%2Fgithub.com%2Fatezer%2Fuxmaturitylevels%2Fblob%2Fmain%2FPROMPT.md)](https://github.com/atezer/uxmaturitylevels/blob/main/PROMPT.md)
+
+**Direct links:** [Open the prompt](./PROMPT.md) · [Start in ChatGPT](https://chatgpt.com/?q=Use%20the%20Designer%20Maturity%20Intelligence%20framework%20from%20https%3A%2F%2Fgithub.com%2Fatezer%2Fuxmaturitylevels%2Fblob%2Fmain%2FPROMPT.md.%20Read%20the%20full%20prompt%20and%20follow%20it%20in%20order.%20First%20complete%20all%2015%20written%20report%20sections%20and%20the%20personal%20development%20operating%20system.%20Do%20not%20generate%20an%20image%20until%20the%20written%20assessment%20is%20complete%20and%20I%20explicitly%20confirm.%20Use%20only%20accessible%20evidence%2C%20distinguish%20direct%2C%20self-reported%2C%20behavioral%2C%20inferred%2C%20and%20missing%20evidence%2C%20and%20never%20invent%20achievements%20or%20metrics.).
+
+The QR opens the prompt file; it does not automatically execute a prompt in every AI app. Copy the prompt into your preferred AI chat and send it. The ChatGPT link pre-fills a starter instruction, but you may still need to send it and provide the full prompt if the chat cannot retrieve the GitHub file.
+
 ## Core principles
 
 - **Evidence before scoring:** distinguish direct, self-reported, behavioral, inferred, and missing evidence.
