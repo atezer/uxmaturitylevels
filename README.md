@@ -120,3 +120,12 @@ Every time the canonical prompt is run and the user confirms or requests a JPG/J
 The layout is stable: verified personal header and assessment date; report title and overall score; radar comparison and eight aligned competency rows; three key insights; current-to-next-level transition; short-, medium-, and long-term development roadmap; and a quiet closing recommendation. The visual uses a warm off-white canvas, deep navy typography, blue current data, magenta targets, subtle green strengths, thin dividers, a strict grid, and generous whitespace.
 
 Only the reference's visual style may be reused. Never copy sample names, dates, scores, or claims. All data must match the written assessment. The prompt requires actual JPEG conversion when supported and prohibits renaming a PNG file to `.jpg`.
+
+
+## Reliable JPG generation
+
+After the user confirms the visual, the prompt requires a new personalized artifact—not the reference image or an unrelated attached image. The renderer must use the completed report's final numerical dataset as the single source of truth, validate values before drawing, and inspect the composed result.
+
+For text-heavy charts and report layouts, deterministic HTML/CSS/SVG, Canvas, vector, document, or Python/PIL rendering is preferred when available. These are internal rendering methods; the deliverable remains the requested JPG/JPEG, not HTML source code.
+
+A PNG must be genuinely converted to JPEG with an available conversion tool before being labeled JPG. If conversion or image inspection is unavailable, the prompt requires the system to disclose the limitation rather than claim success.
