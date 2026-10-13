@@ -50,8 +50,8 @@ test('README agrees with the prompt and clearly labels validation limits', () =>
 
 
 test('maturity calibration remains provisional and score bands cannot bypass evidence gates', () => {
-  assert.match(prompt, /orientation guidance/i);
-  assert.match(prompt, /not.*industry standard|not.*industry norms|not.*validated/i);
+  assert.match(readme, /maturity-level score bands are only orientation guidance/i);
+  assert.match(prompt, /These are assessment guidelines, not industry benchmarks\./);
   assert.match(prompt, /score never overrides a missing evidence gate/);
   assert.match(prompt, /Treat missing evidence as \*\*unknown\*\*/);
   assert.match(readme, /not a psychometric test, formal HR certification, or independently validated industry benchmark/);
