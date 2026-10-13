@@ -1,3 +1,10 @@
+/**
+ * LEGACY / INDEPENDENT TOOL — this six-level task-completion checklist is not
+ * the evidence-based DMI assessment and its percentage is not a DMI maturity
+ * score. The six levels do not map to DMI's five maturity levels. Keep this
+ * component separate until actual usage/ownership is confirmed; do not use it
+ * as a substitute for the canonical PROMPT.md assessment.
+ */
 import React, { useState, useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
