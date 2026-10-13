@@ -679,14 +679,14 @@ Include:
 1. Recommended professional identity.
 2. Evidence-based primary professional profile and up to two secondary profiles, classified separately from maturity level.
 3. Alternative positioning options.
-3. Core differentiators.
-4. Most credible areas of expertise.
-5. Areas where claims should be qualified.
-6. Leadership and individual-contributor potential.
-7. Suitable career directions.
-8. Potential seniority positioning.
-9. Skills or evidence needed to strengthen that positioning.
-10. A concise professional positioning statement.
+4. Core differentiators.
+5. Most credible areas of expertise.
+6. Areas where claims should be qualified.
+7. Leadership and individual-contributor potential.
+8. Suitable career directions.
+9. Potential seniority positioning.
+10. Skills or evidence needed to strengthen that positioning.
+11. A concise professional positioning statement.
 
 Consider relevant pathways such as:
 
