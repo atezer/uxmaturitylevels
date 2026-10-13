@@ -120,42 +120,29 @@ This repository publishes a professional development framework. Adapt it to your
 
 Maintained by [@atezer](https://github.com/atezer).
 
-## Default JPG visual style
+## Visual output standards
 
-Every time the prompt is run and the user confirms or requests a JPG/JPEG infographic, it defaults to the canonical editorial style defined in `PROMPT.md`. No additional style selection is required.
+The complete written assessment and personal development plan must be delivered before asking the user to choose a visual. The only options are:
 
-The default style uses a warm off-white background, dark navy typography, generous whitespace, thin dividers, a stable editorial grid, blue current-profile data, pink/magenta target data, a radar chart, aligned competency score bars, three key insight columns, a current-to-next-level transition, a three-horizon development roadmap, and a restrained closing recommendation.
+- **A — JPG infographic:** a high-resolution, portrait editorial report using the canonical warm-neutral style.
+- **B — Interactive HTML dashboard (Claude recommended):** a responsive dashboard with competency scores, evidence/confidence details, development priorities, and the 30/60/90-day roadmap. Claude may handle this workflow more reliably, but support is not guaranteed in every AI environment.
 
-The visual design may be reused, but **reference-image content must never be copied**: names, dates, scores, targets, and claims must come from the subject's verified information and the written assessment. The prompt requires a real JPEG/JPG export when supported by available image-conversion tools; file extensions must never be used to misrepresent a PNG as JPEG.
+The user receives only the selected format unless they explicitly request both. Both formats must use the completed report's final numerical dataset as their **single source of truth**. Do not create a visual before the written assessment is complete.
 
+### Canonical JPG/JPEG style
 
-## Permanent default JPG style
+Every confirmed/requested JPG/JPEG infographic uses this default style without requiring another style selection:
 
-Every time the canonical prompt is run and the user confirms or requests a JPG/JPEG infographic, it defaults to the reference's restrained editorial report style. No repeated style choice is required.
+- Warm off-white background, deep navy typography, generous whitespace, thin dividers, and a consistent editorial grid.
+- Blue current-profile/current-state data, magenta or pink target data, and restrained green emphasis for strengths.
+- Verified personal header and assessment date; report title and overall score; radar comparison; eight aligned competency score rows; three key insights; current-to-next-level transition; short-, medium-, and long-term roadmap; restrained closing recommendation.
+- Reference imagery may guide **visual style only**. Never copy its names, dates, scores, targets, or claims. All displayed content must come from verified subject information and the written assessment.
 
-The layout is stable: verified personal header and assessment date; report title and overall score; radar comparison and eight aligned competency rows; three key insights; current-to-next-level transition; short-, medium-, and long-term development roadmap; and a quiet closing recommendation. The visual uses a warm off-white canvas, deep navy typography, blue current data, magenta targets, subtle green strengths, thin dividers, a strict grid, and generous whitespace.
+### Rendering and file integrity
 
-Only the reference's visual style may be reused. Never copy sample names, dates, scores, or claims. All data must match the written assessment. The prompt requires actual JPEG conversion when supported and prohibits renaming a PNG file to `.jpg`.
+Use the final numerical dataset as the source of truth; validate values before rendering and inspect the composed result where tools permit. For text-heavy charts and report layouts, deterministic HTML/CSS/SVG, Canvas, vector/document tooling, or Python/PIL rendering is preferred when available. These are internal rendering methods; the requested deliverable remains a JPG/JPEG, not HTML source code.
 
-
-## Reliable JPG generation
-
-After the user confirms the visual, the prompt requires a new personalized artifact—not the reference image or an unrelated attached image. The renderer must use the completed report's final numerical dataset as the single source of truth, validate values before drawing, and inspect the composed result.
-
-For text-heavy charts and report layouts, deterministic HTML/CSS/SVG, Canvas, vector, document, or Python/PIL rendering is preferred when available. These are internal rendering methods; the deliverable remains the requested JPG/JPEG, not HTML source code.
-
-A PNG must be genuinely converted to JPEG with an available conversion tool before being labeled JPG. If conversion or image inspection is unavailable, the prompt requires the system to disclose the limitation rather than claim success.
-
-
-## Visual output options
-
-The complete written assessment and personal development plan are always delivered first. Only after all required sections are complete does the prompt ask the user to choose one visual deliverable:
-
-- **A — JPG infographic:** a high-resolution, portrait editorial infographic using the repository's canonical warm-neutral style.
-- **B — Interactive HTML dashboard (Claude recommended):** a responsive dashboard with competency scores, evidence/confidence details, development priorities, and the 30/60/90-day roadmap. The prompt notes that Claude may handle this HTML workflow more reliably; it does not guarantee identical support in every AI environment.
-
-The user receives only the selected format unless they explicitly request both. The report's canonical numerical dataset remains the single source of truth for either output. Stage 1 explicitly prohibits producing a visual before the written assessment is complete.
-
+A PNG must be genuinely converted to JPEG before being labeled JPG. Never use a file extension to misrepresent the actual format. If conversion, rendering, or image inspection is unavailable, disclose the limitation rather than claiming successful export or inspection.
 
 ## Validation and legacy checklist
 
