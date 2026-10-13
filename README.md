@@ -12,7 +12,7 @@ Designer Maturity Intelligence (DMI) helps designers assess professional capabil
 2. Copy the complete prompt into an AI chat that supports long-form instructions.
 3. Let the AI complete the written assessment and development plan before generating any visual.
 4. Review and challenge the evidence, scores, confidence labels, and recommendations.
-5. Only after the written report is complete, confirm whether you want the JPG infographic.
+5. Only after the written report is complete, choose the JPG infographic (A) or interactive HTML dashboard (B).
 
 ### Start in ChatGPT
 
@@ -39,7 +39,7 @@ The QR opens the prompt file; it does not automatically execute a prompt in ever
 - **Consistent scoring:** use the defined 0–10 scale and domain weighting where evidence supports a score.
 - **Development through application:** connect each priority to real work, feedback, artifacts, and review milestones.
 - **Sustainable scope:** no more than three active development priorities.
-- **Human confirmation for visuals:** finish the written report before asking whether to generate the JPG infographic.
+- **Human confirmation for visuals:** finish the written report before asking the user to choose JPG (A) or interactive HTML (B).
 - **Longitudinal continuity:** compare future evidence with the original baseline; never fabricate historical scores.
 
 ## The 15-section report
@@ -75,7 +75,7 @@ Each domain is assessed through Thinking, Execution, and Impact. The domain form
 
 **Domain Score = (Thinking × 0.40) + (Execution × 0.40) + (Impact × 0.20)**
 
-Score bands: 0–1.9 Not demonstrated; 2.0–3.9 Emerging; 4.0–5.4 Developing; 5.5–6.9 Proficient; 7.0–8.4 Advanced; 8.5–9.4 Expert; 9.5–10 Exceptional. These are framework guidelines, not industry norms.
+Dimension/domain score bands: 0–1.9 Not demonstrated; 2.0–3.9 Emerging; 4.0–5.4 Developing; 5.5–6.9 Proficient; 7.0–8.4 Advanced; 8.5–9.4 Expert; 9.5–10 Exceptional. These are framework guidelines, not industry norms. They are distinct from the five maturity levels; maturity-level score bands are only orientation guidance and cannot override evidence gates. See the maturity calibration rubric in [PROMPT.md](./PROMPT.md).
 
 ## Maturity levels
 
@@ -110,6 +110,9 @@ Track learning progress, behavioral progress, and outcome progress separately. C
 
 - **PROMPT.md** — canonical prompt for running the assessment.
 - **README.md** — framework overview and usage instructions.
+- **PROFILE_CLASSIFICATION_TESTS.md** — 10 qualitative calibration scenarios and acceptance criteria.
+- **tests/dmi-guardrails.test.mjs** — automated structural regression checks for core prompt and fixture guardrails.
+- **.github/workflows/quality.yml** — GitHub Actions workflow that runs the structural checks.
 
 ## License and use
 
@@ -152,3 +155,10 @@ The complete written assessment and personal development plan are always deliver
 - **B — Interactive HTML dashboard (Claude recommended):** a responsive dashboard with competency scores, evidence/confidence details, development priorities, and the 30/60/90-day roadmap. The prompt notes that Claude may handle this HTML workflow more reliably; it does not guarantee identical support in every AI environment.
 
 The user receives only the selected format unless they explicitly request both. The report's canonical numerical dataset remains the single source of truth for either output. Stage 1 explicitly prohibits producing a visual before the written assessment is complete.
+
+
+## Validation and legacy checklist
+
+The profile scenarios are qualitative calibration cases; the repository's automated checks validate that key guardrails and scenario coverage remain present, but they do **not** run an AI model or prove runtime classification accuracy. Model behavior still requires repeated evaluation against the scenarios.
+
+`ux-maturity-checklist.tsx` is a separate legacy six-level checklist. Its completion percentage is a task-completion heuristic, not a DMI maturity score, and its six levels do not map to DMI's five-level model. Do not use it as a substitute for the evidence-based assessment. Reconcile or retire it if the repository intends to maintain only one active maturity model.
