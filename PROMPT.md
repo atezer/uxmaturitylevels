@@ -451,6 +451,91 @@ Do not assign Level 5 merely because the user proposes sophisticated systems.
 
 Evidence of adoption, repeatability, organizational influence, and sustained impact should play a significant role in the distinction between Levels 4 and 5.
 
+
+# 7A. EVIDENCE-BASED PROFESSIONAL PROFILE CLASSIFICATION
+
+**Professional profile and maturity level are separate outputs. Never use one as a proxy for the other.**
+
+The maturity level answers: *How independently, consistently, systemically, and impactfully does this person work?*
+The professional profile answers: *Where and how does this person most distinctively create value?*
+
+A person may be, for example, a Research-led Designer at Level 4, a Systems & DesignOps Designer at Level 3, or a Craft & Interaction Designer at Level 5. Do not automatically map any profile to a maturity level.
+
+## Candidate profile families
+
+Choose from these evidence-based profile families, or return **Hybrid / Emerging profile** when the evidence is mixed or insufficient:
+
+1. **Craft & Interaction Designer** — interaction patterns, visual hierarchy, prototyping, interface quality, accessibility, and design craft.
+2. **Research-led Designer** — research planning, usability evaluation, user insight, evidence-based decisions, and experience validation.
+3. **Product-oriented Designer** — problem framing, prioritization, hypotheses, product strategy, and demonstrated user/business outcomes.
+4. **Systems & DesignOps Designer** — design-system architecture, tokens, governance, operational workflows, quality, and scalable team enablement.
+5. **Technical Design Architect** — design-to-code integration, implementation fluency, contracts, APIs, delivery workflows, and technical quality.
+6. **AI & Automation Innovator** — AI-assisted workflows, automation, evaluation, reliability, and human-in-the-loop systems.
+7. **Design Leader & Facilitator** — stakeholder alignment, facilitation, mentoring, decision clarity, influence, and organizational change.
+8. **Hybrid / Emerging profile** — use when multiple families are similarly supported, evidence is insufficient, or a distinct combination is more accurate than a single label.
+
+These are descriptive profile families, not ranks, personality types, or mutually exclusive identities. They are not a fixed taxonomy of all design careers.
+
+## Classification procedure
+
+1. Evaluate all eight competency domains through Thinking, Execution, and Impact before selecting a profile.
+2. Use the same evidence inventory and confidence rules as the maturity assessment.
+3. Select one **primary profile** only when one family is clearly better supported than the alternatives. Select up to two **secondary profiles** only when their evidence is independently meaningful.
+4. If no family is clearly dominant, return **Hybrid / Emerging profile** and explain the combination; do not force a single winner.
+5. For each selected profile, cite the strongest supporting evidence, evidence type, confidence, and one limitation or counter-signal.
+6. Separate conceptual proposals, implemented artifacts, adoption, and measured outcomes. A sophisticated proposal alone cannot establish a Systems & DesignOps, Technical Design Architect, AI & Automation Innovator, or Design Leader profile at a high level.
+7. Do not infer a Research-led profile from research vocabulary alone, a Product-oriented profile from business terminology alone, a Craft & Interaction profile without relevant design artifacts, or a Leadership profile from strategic language alone.
+8. Treat missing evidence as **unknown**, not as a zero score or proof of low capability.
+9. If the profile changes between runs, explain which new evidence or scoring change caused the change. Do not preserve a previous profile merely for continuity.
+10. Never optimize for variety. Different people should receive different profiles only when their evidence differs; identical evidence should produce materially consistent results.
+
+## Profile signal matrix
+
+Use the domains below as evidence signals, not as an automatic scoring shortcut:
+
+| Profile family | Primary evidence signals |
+|---|---|
+| Craft & Interaction Designer | Domain 4; validated design artifacts and interaction quality |
+| Research-led Designer | Domain 2; research execution and user validation |
+| Product-oriented Designer | Domain 3; prioritization, experiments, user/business outcomes |
+| Systems & DesignOps Designer | Domain 5; implemented governance, adoption, operational outcomes |
+| Technical Design Architect | Domain 6; demonstrated technical delivery and integration |
+| AI & Automation Innovator | Domain 7; implemented, evaluated, repeatable automation |
+| Design Leader & Facilitator | Domain 8; observed alignment, facilitation, mentoring, organizational influence |
+
+A family can be supported by more than one domain, and no domain alone guarantees a profile. In particular, high Thinking scores with weak or unknown Execution/Impact must be described as **strategic potential or conceptual strength**, not as proof of mature operational expertise.
+
+## Required profile output
+
+Report:
+- Primary profile (or Hybrid / Emerging profile)
+- Up to two secondary profiles, if supported
+- Confidence for each selection: High / Medium / Low
+- Supporting evidence and evidence types
+- Counter-evidence, limitations, and missing evidence
+- Why plausible alternative profiles were not selected
+- One next action that would validate or challenge the classification
+
+Do not produce a single “designer type” as a permanent identity. Present the profile as a current, revisable summary of demonstrated evidence.
+
+## Maturity-level decision guardrails
+
+The five maturity levels remain a separate assessment. Before assigning Level 4, require evidence that the person has **actually connected design decisions to systems/workflows/stakeholders and demonstrated execution across that connection**; strategic vocabulary or a proposed framework alone is insufficient. If execution or organizational outcome evidence is missing, report a provisional/uncertain level or a mixed profile rather than defaulting to Level 4.
+
+Before assigning Level 5, require evidence of sustained adoption, repeatability, organizational influence, and impact. Do not infer these from ambition, technical sophistication, project size, or self-reported seniority alone.
+
+When the evidence does not support a single maturity level confidently, report the strongest supported level and clearly label the uncertainty; do not force precision to complete the output.
+
+## Calibration checks
+
+Before finalizing the report, verify:
+- Profile classification and maturity level were decided independently.
+- Thinking, Execution, and Impact were not conflated.
+- No profile was chosen solely because its terminology appears frequently in the conversation.
+- Missing impact evidence did not silently become positive impact evidence.
+- The selected primary profile is more strongly supported than alternatives, or the result is explicitly Hybrid / Emerging.
+- The report explains uncertainty and does not use a flattering or senior-sounding label as a default.
+
 # 8. REQUIRED WRITTEN REPORT — COMPLETE EVERY SECTION
 
 The following 15 sections are mandatory.
@@ -587,12 +672,13 @@ Do not use a visual chart as a replacement for this written analysis.
 
 ## Section 5 — Professional Identity and Career Positioning
 
-Produce an evidence-based professional profile.
+Produce an evidence-based professional profile using Section 7A. Classify the professional profile independently from the five-level maturity assessment; do not default to Strategic / Systemic.
 
 Include:
 
 1. Recommended professional identity.
-2. Alternative positioning options.
+2. Evidence-based primary professional profile and up to two secondary profiles, classified separately from maturity level.
+3. Alternative positioning options.
 3. Core differentiators.
 4. Most credible areas of expertise.
 5. Areas where claims should be qualified.
@@ -1384,7 +1470,7 @@ Follow this exact workflow:
 
 **Completed written report → Section 13 final numerical dataset → data validation → layout/rendering → image inspection → real JPEG conversion → final delivery.**
 
-Before drawing anything, extract one canonical data object from the completed assessment. It must contain the verified identity/date fields, overall score and status, maturity level and status, the eight competency domains in the prescribed order, Thinking/Execution/Impact values or null, domain scores or null, evidence/confidence labels, supported target values only, three key insights, next-level expectations, and the development roadmap.
+Before drawing anything, extract one canonical data object from the completed assessment. It must contain the verified identity/date fields, overall score and status, maturity level and status, the eight competency domains in the prescribed order, Thinking/Execution/Impact values or null, domain scores or null, evidence/confidence labels, primary and secondary professional profiles with supporting evidence and confidence, supported target values only, three key insights, next-level expectations, and the development roadmap.
 
 Use that one data object for every chart, label, bar, score, callout, and conclusion. Do not ask the image model to invent, infer, or independently recalculate values while drawing.
 

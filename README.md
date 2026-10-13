@@ -87,6 +87,19 @@ Score bands: 0–1.9 Not demonstrated; 2.0–3.9 Emerging; 4.0–5.4 Developing;
 
 Level 5 requires evidence of sustained adoption, repeatability, organizational influence, and impact—not just sophisticated proposals or tools.
 
+## Professional profile classification (separate from maturity)
+
+DMI reports two independent conclusions:
+
+- **Maturity level (1–5):** how independently and consistently the designer thinks, executes, and demonstrates impact.
+- **Professional profile:** where the designer's strongest demonstrated contribution currently sits.
+
+Candidate profiles: Craft & Interaction Designer, Research-led Designer, Product-oriented Designer, Systems & DesignOps Designer, Technical Design Architect, AI & Automation Innovator, Design Leader & Facilitator, and Hybrid / Emerging profile.
+
+A designer can have any profile at any maturity level. A Systems & DesignOps profile does not automatically mean Level 4; strategic language alone does not prove execution or impact. Choose a primary profile only when evidence distinguishes it from alternatives; otherwise use Hybrid / Emerging. Missing evidence is unknown, not proof of weakness. Profile labels are provisional, not fixed personality types.
+
+See [PROMPT.md](./PROMPT.md#7a-evidence-based-professional-profile-classification) for rules and [PROFILE_CLASSIFICATION_TESTS.md](./PROFILE_CLASSIFICATION_TESTS.md) for calibration scenarios.
+
 ## Personal development cycle
 
 **Assess → Prioritize → Plan → Practice → Apply → Receive feedback → Reflect → Reassess → Adapt**
