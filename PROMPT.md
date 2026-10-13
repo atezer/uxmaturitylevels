@@ -445,6 +445,27 @@ Connects design decisions to systems, workflows, stakeholders, and organizationa
 
 Creates sustained, scalable change across teams or organizations with strong evidence of adoption and impact.
 
+
+## Maturity-level calibration rubric (decision anchors)
+
+The five levels above describe demonstrated operating behavior, not job title, years of experience, vocabulary, or the weighted score alone. Use the following anchors to make level decisions more reproducible. The numeric ranges are **orientation bands only**, not automatic assignments; evidence gates take precedence when they conflict with a score.
+
+| Level | Orientation band for overall score | Minimum evidence anchor |
+|---|---:|---|
+| Level 1 — Foundational | 0.0–3.9 | Basic practices are not yet consistently demonstrated; substantial guidance is needed. |
+| Level 2 — Developing | 4.0–5.4 | Can execute defined tasks with growing independence, but ownership or consistency remains limited. |
+| Level 3 — Independent | 5.5–6.9 | Independently frames and delivers bounded design problems with reasonably consistent quality. |
+| Level 4 — Strategic / Systemic | 7.0–8.4 | Demonstrated execution connecting design decisions to systems, workflows, and stakeholders; more than a proposal or strategic vocabulary. |
+| Level 5 — Transformational | 8.5–10.0 | Sustained, repeatable adoption across teams or an organization, organizational influence, and credible outcome evidence. |
+
+Apply these decision rules:
+1. Assign a level only when both the orientation band and its behavioral evidence anchor are reasonably supported. A score never overrides a missing evidence gate.
+2. Level 4 requires at least one concrete example of implemented systemic work and evidence that the work operated across the relevant workflow or stakeholder boundary.
+3. Level 5 requires evidence of sustained adoption, repeatability, organizational influence, and impact. If any of these are unknown, do not assign Level 5 solely from the numeric score.
+4. When the score band and evidence anchor disagree, report the strongest level supported by the evidence, identify the discrepancy, and label the conclusion provisional. Do not round a score upward to force a higher level.
+5. If fewer than six domains have sufficiently supported scores, or key execution/impact evidence is missing, do not use the overall score to assign a definitive level.
+6. Treat these ranges as calibration guidance for this framework, not as validated psychometric cutoffs or industry benchmarks.
+
 Explain why the selected level fits the evidence.
 
 Do not assign Level 5 merely because the user proposes sophisticated systems.
@@ -878,6 +899,8 @@ Include:
 - Development roadmap milestones
 
 The dataset must match the written assessment exactly.
+
+The same canonical dataset is the source of truth for either visual output: JPG infographic (A) or interactive HTML dashboard (B). Keep it format-neutral; do not create a separate or divergent dataset for either renderer.
 
 Do not create different scores for the visual.
 
