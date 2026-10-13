@@ -47,3 +47,26 @@ test('README agrees with the prompt and clearly labels validation limits', () =>
   assert.match(readme, /do \*\*not\*\* run an AI model/);
   assert.match(readme, /legacy six-level checklist/);
 });
+
+
+test('maturity calibration remains provisional and score bands cannot bypass evidence gates', () => {
+  assert.match(prompt, /orientation guidance/i);
+  assert.match(prompt, /not.*industry standard|not.*industry norms|not.*validated/i);
+  assert.match(prompt, /score never overrides a missing evidence gate/);
+  assert.match(prompt, /Treat missing evidence as \*\*unknown\*\*/);
+  assert.match(readme, /not a psychometric test, formal HR certification, or independently validated industry benchmark/);
+});
+
+test('visual standards are consolidated and keep A/B outputs data-consistent', () => {
+  assert.equal((readme.match(/^## (?:Default JPG visual style|Permanent default JPG style|Reliable JPG generation|Visual output standards)$/gm) || []).length, 1);
+  assert.match(readme, /A — JPG infographic/);
+  assert.match(readme, /B — Interactive HTML dashboard/);
+  assert.match(readme, /single source of truth/);
+  assert.match(readme, /genuinely converted to JPEG/);
+  assert.match(readme, /Reference imagery may guide \*\*visual style only\*\*/);
+});
+
+test('legacy checklist is explicitly independent of DMI maturity scoring', () => {
+  assert.match(readme, /separate legacy six-level checklist/);
+  assert.match(readme, /do not map to DMI's five-level model/);
+});
