@@ -82,6 +82,20 @@ Do not repeat completed sections unnecessarily when continuing.
 
 **The user must be able to read the full written assessment and development system before being asked to make any decision about the visual.**
 
+
+
+## STAGE 2 — FINAL VISUAL FORMAT SELECTION
+
+Only after every required written section has been completed, present the final visual-format selection question with options A, B, and C.
+
+The question and all three options must appear at the absolute bottom of the final written-assessment response, after all conclusions, limitations, recommendations, development-system details, and the final numerical dataset.
+
+Do not place any additional report sections after the question.
+
+Do not generate any visual deliverable until I select A, B, or C.
+
+There are three visual delivery options: A — JPG infographic; B — interactive HTML dashboard file; C — interactive in-chat dashboard for ChatGPT users. Option C renders the report through the chat interface's supported interactive components; it does not execute, embed, or host the original HTML file. Do not offer formats beyond A, B, and C.
+
 ### Stage 2 — visual-format selection options
 
 - **A — JPG infographic:** a real, inspectable JPEG infographic following the reference-parity and data-traceability requirements.
@@ -89,18 +103,6 @@ Do not repeat completed sections unnecessarily when continuing.
 - **C — Interactive dashboard inside ChatGPT (recommended when the user is using ChatGPT):** render the complete report as a navigable, interactive chat-native experience using only components supported by the current ChatGPT interface. Preserve all 15 written-report sections, the canonical numerical dataset, the eight competency domains and Thinking/Execution/Impact, evidence/confidence and limitations, development priorities, the 30/60/90-day plan, Career Radar and mentorship synthesis, and the QA/status section. Use navigation, filters, selectors, expandable details, checklists, and charts when the interface supports them. If the complete report cannot fit in one response, keep the full content available through clearly labelled in-chat sections and continue without silently dropping mandatory material. Option C is not an HTML file preview, iframe, or claim that arbitrary HTML/JavaScript is executing in the chat. Do not claim exact feature parity with the source HTML unless every relevant section and interaction has been compared. State any interface limitations and any checks that remain unverified.
 
 Recommend C when the user is interacting in ChatGPT and wants to stay in the conversation; recommend B when they need a portable HTML file to open in a browser. Do not choose on the user's behalf: present all three options at the end of Stage 1 and wait for their selection.
-
-## STAGE 2 — FINAL VISUAL FORMAT SELECTION
-
-Only after every required written section has been completed, present the final visual-format selection question with options A and B.
-
-The question and both options must appear at the absolute bottom of the final written-assessment response, after all conclusions, limitations, recommendations, development-system details, and the final numerical dataset.
-
-Do not place any additional report sections after the question.
-
-- Do not generate any visual deliverable until I select A, B, or C.
-
-There are three visual delivery options: A — JPG infographic; B — interactive HTML dashboard file; C — interactive in-chat dashboard for ChatGPT users. Option C renders the report through the chat interface's supported interactive components; it does not execute, embed, or host the original HTML file. Do not offer formats beyond A, B, and C.
 
 # 3. EVIDENCE COLLECTION AND INTERPRETATION
 
