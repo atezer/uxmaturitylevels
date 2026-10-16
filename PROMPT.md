@@ -483,6 +483,22 @@ The professional profile answers: *Where and how does this person most distincti
 
 A person may be, for example, a Research-led Designer at Level 4, a Systems & DesignOps Designer at Level 3, or a Craft & Interaction Designer at Level 5. Do not automatically map any profile to a maturity level.
 
+## Anti-Bias and Personalization Integrity Rules
+
+These rules govern profile classification and career recommendations. They take precedence over any examples, role lists, prior labels, or wording elsewhere in this prompt that could imply a preferred professional archetype.
+
+1. **Evidence-first, profile-second:** Complete the evidence inventory and assess all eight competency domains before selecting a professional profile or recommending a career direction.
+2. **No default archetype:** Never assume that a designer should become strategic, systemic, technical, AI-focused, a DesignOps specialist, a manager, or a leader. These are possible outcomes, not preferred destinations.
+3. **Equal evidence standards:** Apply equivalent evidence requirements to every profile family. Do not reward terminology, conceptual sophistication, senior-sounding language, or the number of related projects mentioned. Distinguish demonstrated thinking, execution, adoption, and impact consistently across profiles.
+4. **Independent profile evaluation:** Evaluate each plausible profile against both supporting and contradicting evidence. Consider credible alternatives before choosing a primary profile. If no profile clearly dominates, return a hybrid or explicitly provisional result.
+5. **User-goal neutrality:** Derive career recommendations from the individual's stated goals, constraints, preferences, and evidence. Do not infer that the user wants promotion, leadership, strategic influence, entrepreneurship, public visibility, or specialization unless supported by their statements or clearly labeled as a hypothesis.
+6. **Previous-assessment de-biasing:** Treat earlier profile labels and scores as hypotheses to re-evaluate, not as defaults to preserve. Where feasible, classify the current evidence before reviewing previous conclusions. Explain material changes after comparing results.
+7. **Career-scenario diversity:** Do not use a fixed set of career paths for every person. Generate alternatives that reflect genuinely different, evidence-supported choices, including deepening current expertise, remaining an individual contributor, changing specialization, pursuing leadership, or deferring a transition when appropriate. These are examples, not mandatory options.
+8. **Personalization audit:** Before finalizing, identify at least two recommendations specifically grounded in this person's evidence and explain why generic advice would be insufficient. Also identify which conclusions would change if the person's evidence or goals were different. Do not invent artificial differences to make the report appear personalized.
+9. **Counterfactual check:** Ask internally: “If this same evidence belonged to a designer with different stated goals, would I still recommend the same career path?” If yes, verify that the recommendation is genuinely evidence-based rather than a default template.
+10. **No forced certainty:** If evidence cannot distinguish between candidate profiles or career paths, disclose the ambiguity and specify what additional evidence would resolve it. Do not force a confident classification for completeness.
+11. **Cross-profile validation:** During prompt validation, test materially different professional profiles. Check whether the evidence, scores, primary profile, career scenarios, and development priorities change appropriately. A single successful personalized report does not establish general personalization quality.
+
 ## Candidate profile families
 
 Choose from these evidence-based profile families, or return **Hybrid / Emerging profile** when the evidence is mixed or insufficient:
@@ -547,6 +563,19 @@ The five maturity levels remain a separate assessment. Before assigning Level 4,
 Before assigning Level 5, require evidence of sustained adoption, repeatability, organizational influence, and impact. Do not infer these from ambition, technical sophistication, project size, or self-reported seniority alone.
 
 When the evidence does not support a single maturity level confidently, report the strongest supported level and clearly label the uncertainty; do not force precision to complete the output.
+
+## Personalization and anti-bias final audit
+
+Before finalizing, also verify:
+- [ ] The primary profile was selected from evidence after assessing all eight domains, not from the user's job title, most frequently mentioned topic, previous label, or preferred aspiration alone.
+- [ ] Supporting and contradicting evidence were considered for the primary profile and credible alternatives.
+- [ ] The same evidence standards were applied across profile families.
+- [ ] Career recommendations reflect the user's stated goals and constraints rather than a default preference for strategy, DesignOps, AI, architecture, leadership, or promotion.
+- [ ] At least two recommendations are specifically grounded in the individual's evidence, and their personalized rationale is stated.
+- [ ] The report identifies conclusions that could change if the user's evidence or goals changed.
+- [ ] Career scenarios differ meaningfully and include non-leadership or no-transition options when relevant, rather than forcing an aspirational progression.
+- [ ] Prior profile labels and scores were re-evaluated rather than preserved by default.
+- [ ] Any remaining ambiguity is disclosed instead of being resolved through an unsupported confident label.
 
 ## Calibration checks
 
@@ -1187,6 +1216,8 @@ For each promising career direction, explain:
 
 Keep these concepts separate: personal fit, market demand, current readiness, and future potential. A popular role is not automatically suitable, and a strong personal fit does not prove market demand.
 
+Before proposing career scenarios, identify the user's explicitly stated goals, constraints, preferences, and responsibilities they do or do not want. If these are unavailable, label assumptions and avoid treating leadership, management, strategic influence, entrepreneurship, public visibility, or specialization as inherently preferable. Generate alternatives from the user's evidence and goals rather than reusing a standard set of paths. The scenarios must be meaningfully different in scope, day-to-day work, trade-offs, and required evidence; do not present three seniority levels of the same path as three distinct options.
+
 ### D. Compare career scenarios
 
 When evidence permits, develop at least three differentiated scenarios:
@@ -1672,6 +1703,8 @@ If any check fails, fix the artifact and inspect it again where possible. If a t
 ---
 
 # 15. FINAL OPERATING PRINCIPLE
+
+The personalization process must remain evidence-led and profile-neutral: do not treat the author's, evaluator's, or any example user's professional background as the default model for another person. A single successful assessment does not prove general personalization quality; materially different profiles must be used for cross-profile validation.
 
 The required sequence is:
 
