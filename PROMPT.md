@@ -82,6 +82,14 @@ Do not repeat completed sections unnecessarily when continuing.
 
 **The user must be able to read the full written assessment and development system before being asked to make any decision about the visual.**
 
+### Stage 2 — visual-format selection options
+
+- **A — JPG infographic:** a real, inspectable JPEG infographic following the reference-parity and data-traceability requirements.
+- **B — Interactive HTML dashboard file:** a real, self-contained HTML artifact where feasible, with functional controls and runtime QA reported honestly.
+- **C — Interactive dashboard inside ChatGPT (recommended when the user is using ChatGPT):** render the complete report as a navigable, interactive chat-native experience using only components supported by the current ChatGPT interface. Preserve all 15 written-report sections, the canonical numerical dataset, the eight competency domains and Thinking/Execution/Impact, evidence/confidence and limitations, development priorities, the 30/60/90-day plan, Career Radar and mentorship synthesis, and the QA/status section. Use navigation, filters, selectors, expandable details, checklists, and charts when the interface supports them. If the complete report cannot fit in one response, keep the full content available through clearly labelled in-chat sections and continue without silently dropping mandatory material. Option C is not an HTML file preview, iframe, or claim that arbitrary HTML/JavaScript is executing in the chat. Do not claim exact feature parity with the source HTML unless every relevant section and interaction has been compared. State any interface limitations and any checks that remain unverified.
+
+Recommend C when the user is interacting in ChatGPT and wants to stay in the conversation; recommend B when they need a portable HTML file to open in a browser. Do not choose on the user's behalf: present all three options at the end of Stage 1 and wait for their selection.
+
 ## STAGE 2 — FINAL VISUAL FORMAT SELECTION
 
 Only after every required written section has been completed, present the final visual-format selection question with options A and B.
@@ -90,9 +98,9 @@ The question and both options must appear at the absolute bottom of the final wr
 
 Do not place any additional report sections after the question.
 
-Do not generate either artifact until I select A or B.
+- Do not generate any visual deliverable until I select A, B, or C.
 
-There are exactly two visual output options: A — JPG infographic and B — interactive HTML dashboard. Do not offer additional formats.
+There are three visual delivery options: A — JPG infographic; B — interactive HTML dashboard file; C — interactive in-chat dashboard for ChatGPT users. Option C renders the report through the chat interface's supported interactive components; it does not execute, embed, or host the original HTML file. Do not offer formats beyond A, B, and C.
 
 # 3. EVIDENCE COLLECTION AND INTERPRETATION
 
@@ -932,7 +940,7 @@ Include:
 
 The dataset must match the written assessment exactly.
 
-The same canonical dataset is the source of truth for either visual output: JPG infographic (A) or interactive HTML dashboard (B). Keep it format-neutral; do not create a separate or divergent dataset for either renderer.
+The same canonical dataset is the source of truth for either visual output and for in-chat option C: JPG infographic (A) or interactive HTML dashboard (B). Keep it format-neutral; do not create a separate or divergent dataset for either renderer.
 
 Do not create different scores for the visual.
 
@@ -2241,7 +2249,7 @@ This rule applies to every execution of this prompt and every edit to this repos
 ## Mandatory no-loss protocol
 
 Before producing an assessment, editing the prompt, or generating either visual format:
-1. Treat all 15 written-report sections, the eight individual competency domains, Thinking/Execution/Impact scoring, evidence/confidence labels, separate maturity and professional-profile conclusions, personal development system, longitudinal reassessment, Career Radar and mentorship synthesis, and both A/B output contracts as one feature set.
+1. Treat all 15 written-report sections, the eight individual competency domains, Thinking/Execution/Impact scoring, evidence/confidence labels, separate maturity and professional-profile conclusions, personal development system, longitudinal reassessment, Career Radar and mentorship synthesis, and A/B/C output contracts as one feature set.
 2. For a repository change, compare the proposed change with the current canonical `PROMPT.md`, `README.md`, tests, and `FEATURE_PARITY_MATRIX.md`. Identify each feature affected by additions, deletions, renames, reordered instructions, or changed precedence.
 3. Never restore an old PR branch or commit wholesale simply to recover a missing feature. Extract the intended feature, reconcile it with current `main`, and preserve all later safeguards and changes.
 4. If an instruction is genuinely obsolete or contradictory, document the conflict and the chosen resolution. Do not silently resolve it by deleting requirements.
@@ -2308,3 +2316,48 @@ These are content purposes, not permission to invent scores. Preserve the refere
 - A valid JPEG file is not a valid deliverable unless content parity and visual QA also pass.
 - If any mandatory section/module is absent, any value is untraceable, or any overlapping/clipped text remains, the artifact fails acceptance and must be corrected before delivery.
 - The final response must link to the actual generated primary JPG and list PASS/FAIL/UNVERIFIED for report completeness, data traceability, reference parity, actual JPEG decoding, visual inspection, and automated tests.
+
+
+# 13C. CHATGPT IN-CHAT INTERACTIVE DASHBOARD — OPTION C
+
+Use this section only when the user selects **C — ChatGPT içinde etkileşimli dashboard**.
+
+## Purpose and platform boundary
+
+Create an interactive report experience that the user can navigate without leaving the ChatGPT conversation. Use the chat interface's supported native components and interaction mechanisms. This is a chat-native rendering of the assessment, not execution of an arbitrary HTML file, iframe, embedded browser, or unrestricted JavaScript application.
+
+Do not claim the original HTML file is running inside ChatGPT. Do not claim that all HTML features have been reproduced unless the source file has been compared feature by feature and every relevant interaction has been verified.
+
+## Mandatory content parity
+
+Use the completed written report and Section 13 final numerical dataset as the single source of truth. Preserve the full content of all 15 written-report sections and every applicable required synthesis, including:
+
+- all eight individual competency domains in canonical order;
+- Thinking, Execution, and Impact values, evidence, confidence, and limitations;
+- evidence inventory and missing-evidence distinctions;
+- maturity-level calibration and separate professional-profile hypothesis;
+- strengths, blind spots, development gaps, and no more than three active development priorities;
+- the 30/60/90-day roadmap and longer-term development direction;
+- validation and measurement plan;
+- personal development coaching summary and operating system;
+- a dedicated Career Radar and mentorship synthesis, separate from the eight-domain competency chart;
+- canonical numerical dataset and provenance;
+- a QA/status section that distinguishes what is present, what works, and what remains unverified.
+
+Do not replace the full report with an executive summary or a short prototype. If the interface's response or layout constraints prevent showing every section at once, provide clear section navigation and expose the full content through in-chat sections over the response sequence. Do not silently omit a section to fit a single screen.
+
+## Interaction requirements
+
+Use only interactions actually supported by the current chat interface. Where available and appropriate, include section navigation, domain filters, scenario selectors, expandable evidence/details, roadmap checklists, and charts. Every visible control must have a real, understandable effect. Do not include decorative controls that do nothing.
+
+Keep the interface accessible: descriptive labels, clear selected states, readable contrast, logical order, and text alternatives for chart conclusions. When a native interaction or chart is unavailable, show the same information as structured text or a table and disclose the adaptation.
+
+## Data integrity and QA
+
+- Derive every visible score, label, career claim, and roadmap item from the completed report and canonical dataset.
+- Keep null, missing, unsupported, and not-applicable values distinct; never convert them to zero or fabricate chart geometry.
+- If the report and dataset conflict, stop and resolve the conflict before rendering.
+- Keep the Career Radar separate from the competency radar chart.
+- Verify section coverage, domain order, score consistency, control behavior, and content parity to the extent possible in the current interface.
+- Report structural/content checks separately from interaction/runtime checks. Mark any check not performed as UNVERIFIED.
+- If exact source-HTML parity has not been established, explicitly describe the result as a chat-native rendition rather than a complete port of the HTML file.
