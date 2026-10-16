@@ -104,3 +104,43 @@ test('visual QA covers failure cases and forbids unverified success claims', () 
   assert.match(prompt, /Do not claim 100% correctness/);
   assert.match(prompt, /If a check cannot be performed, mark it unverified and disclose why/);
 });
+
+
+test('individual DMI subject and exact eight-domain taxonomy are release-blocking', () => {
+  const domains = [
+    'Design Strategy & Systems Thinking',
+    'User Research & Experience Quality',
+    'Product Thinking & Business Impact',
+    'Interaction & Visual Design',
+    'Design Systems & DesignOps',
+    'Technical & Delivery Capability',
+    'AI, Automation & Innovation',
+    'Leadership, Communication & Mentorship'
+  ];
+  const correction = prompt.slice(prompt.lastIndexOf('# CRITICAL CORRECTION — INDIVIDUAL DMI, NOT CORPORATE UX MATURITY'));
+  assert.ok(correction.length > 0, 'missing authoritative individual-DMI correction');
+  assert.match(correction, /assessment of an individual designer's professional maturity/i);
+  assert.match(correction, /It is NOT:/);
+  assert.match(correction, /Never assess or visualize the maturity of a company, department, team, design organization, or UX function/i);
+  assert.match(correction, /Use the exact eight individual DMI domains, in this order, everywhere in the assessment and visual/i);
+  for (const domain of domains) {
+    assert.ok(correction.includes(domain), 'missing required individual competency domain: ' + domain);
+  }
+  for (const forbidden of [
+    'Bütçe ve Kaynaklar',
+    'Organizasyonel Yapı',
+    'Yetenek ve Ekip Gelişimi',
+    'UX Süreçleri ve Yöntemler'
+  ]) {
+    assert.ok(correction.includes(forbidden), 'missing corporate-category regression sentinel: ' + forbidden);
+  }
+  assert.match(correction, /This regression test is release-blocking for both JPG and HTML/i);
+});
+
+test('visual deliverable cannot be declared complete without actual artifact QA', () => {
+  assert.match(prompt, /Do not claim that tests passed unless they were actually run/i);
+  assert.match(prompt, /If a check cannot be performed, mark it unverified and disclose why/i);
+  assert.match(prompt, /inspect the actual final image/i);
+  assert.match(prompt, /A PNG must be genuinely converted to JPEG/i);
+  assert.match(prompt, /Correct output type for the selected option/i);
+});
