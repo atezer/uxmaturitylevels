@@ -1794,3 +1794,105 @@ Do not treat scores as permanent labels or guaranteed predictions of career succ
 The development plan must be evidence-based, personalized, sustainable, practical, and revisable.
 
 **My first deliverable is the complete written assessment and personal development plan. I must be able to read the entire report before seeing the final A/B visual-format question. Only after I select A or B should you generate and deliver the selected artifact.**
+
+---
+
+# ADDITIONAL MANDATORY RULE — PRE-FLIGHT, DATA CONTRACT, AND FAILURE-SAFE VISUAL QA
+
+This section is authoritative for visual generation and supplements the existing requirements without replacing any written-assessment section, scoring rule, evidence rule, or the A/B selection protocol. If another visual instruction appears to conflict with this section, preserve the stricter evidence-integrity requirement and the user's selected output format.
+
+## 1. Pre-flight before rendering or changing implementation
+
+Before generating the selected visual, inspect the completed written assessment and its final numerical dataset (Section 13). Do not use a prior image, sample/reference data, old provisional scores, or assumptions as a substitute.
+
+Create a compact internal requirements matrix covering:
+- source requirement;
+- canonical data field or report section;
+- intended visual representation;
+- validation method;
+- pass/fail result.
+
+If the written report and final numerical dataset conflict, stop before rendering and resolve the inconsistency from the assessment evidence. Do not silently alter the report or fabricate a value to make the visual easier to compose.
+
+When working inside a code repository, inspect the existing data flow, renderer, and tests before modifying them. Prefer the smallest safe change. Preserve working architecture and existing behavior unrelated to the identified defect. Do not add dependencies, invent a new schema, or rewrite the renderer unless inspection shows this is necessary.
+
+## 2. Canonical data contract
+
+Use one canonical data object derived from the completed written report and Section 13 final numerical dataset for every visual element: identity, assessment date, overall score/status, maturity interpretation, all eight competency domains in their prescribed order, Thinking/Execution/Impact where defined, evidence/confidence labels, supported target values, insights, transition guidance, and roadmap.
+
+The data contract must distinguish:
+- a valid numeric value;
+- a missing or null value;
+- an explicitly provisional value;
+- a value that is not applicable;
+- a supported target versus an unsupported target.
+
+Never coerce null, missing, or not-applicable values to zero. Never infer that insufficient evidence means low ability. Do not calculate or display an overall score unless the existing scoring and eligibility rules permit it. Do not invent target scores, benchmark comparisons, market statistics, names, dates, or career claims.
+
+Keep rendering logic separate from assessment logic. The renderer may format and display validated values; it must not independently infer, rescore, or upgrade confidence. Every displayed number must be traceable to the canonical data object and, where applicable, its evidence or calculation.
+
+## 3. Graceful composition when evidence is incomplete
+
+Missing scores must not produce fabricated charts, but they must not force the entire infographic into a blank or broken layout.
+
+- Keep all eight competency domains visible in the required order.
+- For unsupported scores, display a concise evidence-status label rather than a numeric score, percentage, zero-length-as-failure bar, or invented radar coordinate.
+- Render a radar chart only when the available values satisfy the source prompt's data-validity requirements. If they do not, replace the chart area with a clear evidence map or competency overview that preserves the editorial hierarchy.
+- Show a target series only when supported by the canonical dataset.
+- Preserve supported qualitative insights and actionable recommendations while labeling observation, interpretation, and recommendation distinctly when confusion is possible.
+- Do not remove required report sections merely because numeric data is incomplete. Adapt the visual representation while preserving the content requirements.
+
+## 4. Deterministic rendering and format integrity
+
+For text-heavy, data-sensitive visuals, use the existing deterministic renderer when available. Render typography, numeric labels, chart geometry, bars, and layout from validated data; do not rely on an image model to reproduce precise text or numbers.
+
+Use the image-generation model only where it adds value without becoming the authority for assessment values. If no deterministic renderer is available, use the most reliable available path and explicitly report any validation that could not be performed.
+
+When option A is selected, deliver an actual JPEG/JPG file. Convert the rendered image using a real image conversion/export operation when necessary. A filename extension change is not a conversion. If actual JPEG output cannot be produced, disclose the limitation and actual format; never mislabel the file. Option B remains an interactive HTML dashboard and must not be substituted for option A.
+
+## 5. Required validation scenarios
+
+Validate the data and rendering path against these cases using automated tests where the repository supports them, or a documented manual check where it does not:
+
+1. Fully populated, valid assessment data.
+2. All competency scores missing or null.
+3. Partially populated competency scores.
+4. Unsupported or missing target values.
+5. Conflict between the written report and final numerical dataset.
+6. Legacy/reference values attempting to appear in the current output.
+7. Turkish characters and punctuation.
+8. Text overflow, clipping, overlap, and small labels.
+9. Renderer or image-conversion failure.
+10. Correct output type for the selected option.
+
+For each case, state the expected behavior and the observed result. Tests must fail when unsupported numbers appear, null values are converted to scores, chart geometry disagrees with displayed values, or the selected artifact format is wrong.
+
+Do not claim that tests passed unless they were actually run. Separate automated test results, manual visual inspection, and unverified assumptions in the final report.
+
+## 6. Final visual QA and delivery gate
+
+Inspect the actual final artifact—not only the source prompt, HTML, code, or a tool success message.
+
+Verify:
+- all required sections and eight competency labels are present;
+- all displayed values match the canonical dataset;
+- no unsupported score, target, benchmark, or market claim remains;
+- radar coordinates, bars, labels, and legends agree with their data;
+- the reading order and editorial style match this prompt;
+- Turkish characters render correctly;
+- text is legible, with no clipping, overlap, duplication, or broken layout;
+- the artifact is newly composed for this assessment and is not a reused reference image;
+- the delivered file is the selected output type and its actual format has been verified when tooling permits.
+
+If a check fails, fix and rerender, then inspect again. If a check cannot be performed, mark it unverified and disclose why. Never convert an unverified result into a pass.
+
+## 7. Completion report
+
+When the visual is delivered, include a concise report of:
+- the artifact and exact file/link;
+- the canonical dataset version/date used;
+- automated tests actually run and their results;
+- manual visual checks actually performed;
+- failed or unverified checks and remaining limitations.
+
+Do not claim 100% correctness. State only what the available evidence and completed checks support. A successful render is not, by itself, proof of data correctness or visual quality.
