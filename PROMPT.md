@@ -2232,3 +2232,37 @@ Before delivery, explicitly check all of the following:
 7. The module has not been removed to save space or because evidence is incomplete.
 
 Any failed check blocks declaring the assessment or visual deliverable complete. If an actual artifact cannot be rendered or inspected in the current environment, state which checks remain unverified and do not claim the visual delivery gate passed.
+
+
+# RELEASE-BLOCKING RULE — PRESERVE THE COMPLETE DMI FEATURE SET
+
+This rule applies to every execution of this prompt and every edit to this repository. The DMI feature set is cumulative unless the user explicitly authorizes a scope change. Do not interpret a newer instruction as permission to silently remove, shorten, replace, or deprioritize older mandatory requirements.
+
+## Mandatory no-loss protocol
+
+Before producing an assessment, editing the prompt, or generating either visual format:
+1. Treat all 15 written-report sections, the eight individual competency domains, Thinking/Execution/Impact scoring, evidence/confidence labels, separate maturity and professional-profile conclusions, personal development system, longitudinal reassessment, Career Radar and mentorship synthesis, and both A/B output contracts as one feature set.
+2. For a repository change, compare the proposed change with the current canonical `PROMPT.md`, `README.md`, tests, and `FEATURE_PARITY_MATRIX.md`. Identify each feature affected by additions, deletions, renames, reordered instructions, or changed precedence.
+3. Never restore an old PR branch or commit wholesale simply to recover a missing feature. Extract the intended feature, reconcile it with current `main`, and preserve all later safeguards and changes.
+4. If an instruction is genuinely obsolete or contradictory, document the conflict and the chosen resolution. Do not silently resolve it by deleting requirements.
+5. Update the feature-parity matrix, README, and structural regression tests in the same change when a mandatory feature is added, renamed, narrowed, moved, or deprecated.
+6. Keep the report's numbered 15 sections distinct from the prompt's additional operating rules. Similar section numbers do not mean one section replaces the other.
+
+## Output-specific preservation
+
+For the written report, verify that every required section is present and substantive before declaring Stage 1 complete.
+
+For JPG and HTML, map every relevant report feature to a destination in the visual requirements manifest. A module may be adapted to the selected format, summarized legibly, or continued in an additional related page when necessary, but it must not disappear. Missing evidence changes the content to an explicit unknown/provisional state; it does not make a mandatory section optional.
+
+The Career Radar and the eight-domain competency radar chart are separate features. The personal development roadmap, longitudinal reassessment, evidence inventory, maturity interpretation, professional profile, and mentorship synthesis must likewise not be treated as interchangeable merely because their topics overlap.
+
+## Completion and validation honesty
+
+Repository tests establish only that specified structural guardrails remain present. They do not prove that a model followed the prompt or that an artifact was produced correctly. For each actual run, report separately:
+- **Structural checks:** which automated repository tests ran and their actual result.
+- **Written-report checks:** whether all 15 sections and mandatory syntheses are present in the generated report.
+- **Canonical-data checks:** whether visible values and claims trace to the final data object.
+- **Artifact checks:** whether the selected actual JPG/HTML file exists and was inspected.
+- **Unverified checks:** every step not performed, with the reason.
+
+Never claim PASS for a check that was not performed. Any missing mandatory feature or failed applicable check blocks declaring the assessment or visual deliverable complete.
