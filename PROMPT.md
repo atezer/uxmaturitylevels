@@ -1896,3 +1896,60 @@ When the visual is delivered, include a concise report of:
 - failed or unverified checks and remaining limitations.
 
 Do not claim 100% correctness. State only what the available evidence and completed checks support. A successful render is not, by itself, proof of data correctness or visual quality.
+
+# MANDATORY RULE — ZERO FEATURE LOSS ACROSS JPG AND HTML
+
+This rule is binding for every run and overrides any narrower visual instruction that would omit a required assessment capability. JPG and HTML are two renderers of the same complete DMI assessment, not reduced and expanded editions.
+
+## 1. Canonical feature-parity contract
+
+The complete written assessment and Section 13 canonical numerical dataset remain the single source of truth. Both JPG and HTML must preserve every applicable finding, label, score, status, caveat, comparison, recommendation, and development action from that source. Neither format may silently omit a feature because of layout, convenience, model preference, or output length.
+
+At minimum, both visual formats must represent all of the following:
+- Personal professional identity and evidence-based profile classification, separate from maturity level.
+- Overall maturity score and level, with calculation/validation status.
+- All eight competency domains and every available Thinking, Execution, and Impact score.
+- Current-versus-target comparison for each domain whenever defensible target data exists.
+- Radar chart and aligned per-domain score rows/bars when supported by the dataset.
+- Evidence inventory and evidence type distinctions (direct, self-reported, behavioral, inferred, missing).
+- Confidence levels, evidence coverage, limitations, and provisional/unavailable states.
+- Strongest supported area, priority development gap, and next recommended action.
+- Career Radar and personalized career-positioning synthesis: primary/secondary profile hypotheses, relevant role pathways, seniority positioning where supported, market signals with source/date, and evidence gaps.
+- Role/profile match or alignment percentage only when a transparent, reproducible method and defensible role benchmark are documented in the canonical dataset. Display the method and benchmark provenance. Never copy example percentages or fabricate market norms.
+- The basis of any target profile/polygon, including source, date, scale, and rationale. If no defensible target exists, retain the comparison feature as an explicit “benchmark unavailable” state rather than inventing a target or silently removing the comparison section.
+- Current-to-next-level transition and the behaviors/evidence required to progress, only where justified.
+- 30/60/90-day roadmap, longer-term 3–12 month / 1-year+ actions when supported, validation metrics, and personal development operating-system steps.
+- The final recommendation, key caveats, and distinction between current evidence, future potential, and achieved impact.
+
+## 2. No-loss does not mean invented data
+
+Feature parity is mandatory; unsupported numerical content is not. If a value is missing or cannot be validated:
+- Preserve the relevant section, row, axis, card, or interaction.
+- Render a clear state such as “Kanıt yetersiz”, “Hesaplanmadı”, “Hedef benchmark mevcut değil”, or “Doğrulama bekliyor”.
+- Explain briefly what evidence is needed to populate it.
+- Never replace null with zero, use an old baseline as current, invent a target, or imply that a proposed outcome has already happened.
+
+A radar chart with unavailable scores must not draw fabricated polygons. Keep the radar component/section visible with an informative unavailable state, and preserve all competency rows in the same order. Do not remove the Career Radar simply because the match percentage cannot currently be calculated; show the supported qualitative positioning and clearly mark the quantitative comparison as unavailable.
+
+## 3. Format-specific implementation
+
+### JPG infographic
+Use the reference editorial style and a sufficiently tall portrait canvas. Prioritize legibility, but do not solve space constraints by deleting required features. Use multiple coherent visual sections within the same image or a longer portrait canvas. Preserve career positioning, benchmark/match status, evidence/confidence, the eight-domain comparison, insights, and roadmap alongside the score overview. All values must match Section 13 exactly.
+
+### HTML dashboard
+Implement all canonical content, including details that would be too dense for the initial viewport, using accessible tabs, expandable evidence notes, filters, or sections. Interactivity may organize content but must not delete or alter it. Include all eight domains, score/target statuses, evidence and confidence details, Career Radar, sources, limitations, and the full development plan. Ensure all displayed values match Section 13 exactly.
+
+## 4. Mandatory pre-delivery parity audit
+
+Before delivery, check each applicable item against the written report and canonical dataset. Verify:
+1. All required feature categories above are present in the chosen output.
+2. All eight domain names and their order match.
+3. Every displayed number, label, target, confidence level, and status matches the canonical dataset.
+4. Career Radar and role-positioning content has not been replaced by a generic profile summary.
+5. Match percentages and target polygons have defensible, documented data—or an explicit unavailable state.
+6. Missing evidence is disclosed without implying low ability.
+7. The JPG is legible at full size and is actually JPEG if labelled JPG.
+8. The HTML is complete, responsive, keyboard-considerate, and its interactive controls work; report only tests actually performed.
+9. No required feature was removed merely to fit a layout.
+
+If any required item fails, do not present the output as complete. Fix it or clearly state the specific unresolved limitation. Feature parity and numerical integrity are both release-blocking quality gates.
