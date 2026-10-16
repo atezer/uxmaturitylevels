@@ -81,7 +81,7 @@ test('A output requires one primary reference-matched JPG and prohibits invented
   assert.match(prompt, /Render ONE tall, high-resolution JPEG file as the primary A deliverable/);
   assert.match(prompt, /Do not split the main deliverable into multiple unrelated JPEGs/);
   assert.match(prompt, /Do not treat previous assistant-generated visual values as authoritative/);
-  assert.match(prompt, /Do not draw a numeric radar polygon/);
+  assert.match(prompt, /do not draw a numeric radar polygon/i);
   assert.match(prompt, /Career Radar must include distinct scenarios and decision criteria/);
   assert.match(prompt, /If any mandatory section\/module is absent, any value is untraceable, or any overlapping\/clipped text remains, the artifact fails acceptance/);
   for (const module of [
