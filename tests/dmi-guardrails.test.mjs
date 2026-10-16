@@ -6,13 +6,18 @@ const prompt = await readFile(new URL('../PROMPT.md', import.meta.url), 'utf8');
 const readme = await readFile(new URL('../README.md', import.meta.url), 'utf8');
 const scenarios = await readFile(new URL('../PROFILE_CLASSIFICATION_TESTS.md', import.meta.url), 'utf8');
 
-test('canonical prompt preserves the 15-section report and both visual choices', () => {
+test('canonical prompt preserves the 15-section report and all three visual choices', () => {
   for (let i = 1; i <= 15; i++) {
     assert.match(prompt, new RegExp('## Section ' + i + ' —'));
   }
   assert.match(prompt, /A — JPG infographic/);
   assert.match(prompt, /B — interactive HTML dashboard/);
-  assert.match(prompt, /same canonical dataset is the source of truth for either visual output/);
+  assert.match(prompt, /C — interactive in-chat dashboard for ChatGPT users/);
+  assert.match(prompt, /same canonical dataset is the source of truth for either visual output and for in-chat option C/);
+  assert.match(prompt, /Stage 2 — visual-format selection options/);
+  assert.match(prompt, /Recommend C when the user is interacting in ChatGPT/);
+  assert.match(prompt, /# 13C\. CHATGPT IN-CHAT INTERACTIVE DASHBOARD — OPTION C/);
+  assert.match(prompt, /Do not claim the original HTML file is running inside ChatGPT/);
 });
 
 test('profile and maturity remain independent and evidence-gated', () => {
@@ -61,6 +66,8 @@ test('visual standards are consolidated and keep A/B outputs data-consistent', (
   assert.equal((readme.match(/^## (?:Default JPG visual style|Permanent default JPG style|Reliable JPG generation|Visual output standards)$/gm) || []).length, 1);
   assert.match(readme, /A — JPG infographic/);
   assert.match(readme, /B — Interactive HTML dashboard/);
+  assert.match(readme, /C — Interactive dashboard inside ChatGPT/);
+  assert.match(readme, /chat-native rendition, not a browser running the original HTML file/);
   assert.match(readme, /single source of truth/);
   assert.match(readme, /genuinely converted to JPEG/);
   assert.match(readme, /Reference imagery may guide \*\*visual style only\*\*/);
@@ -163,6 +170,7 @@ test('feature-parity matrix covers core capabilities and separates structural fr
     'Career Radar, market signals, scenario matrix, mentorship and experiments',
     'JPG style, personal identity, data consistency and true JPEG',
     'Interactive HTML as the alternative output',
+    'ChatGPT in-chat interactive dashboard (Option C)',
     'Graceful fallbacks for null/missing evidence',
     'Legacy six-level checklist kept separate from DMI',
     'Prompt and README changes must be reviewed together',
