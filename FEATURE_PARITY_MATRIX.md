@@ -45,3 +45,16 @@ This file is the repository's feature-preservation checklist. Update it whenever
 ## Known validation limitation
 
 These checks protect repository instructions and documentation. They do not run a model, validate the quality of a personal assessment, generate a JPEG, or execute an HTML dashboard. Those require separate end-to-end evaluations and artifact inspection.
+
+
+## Single-JPG end-to-end regression gate (2026-10-16)
+
+| Regression | Required behavior | Automated protection | Runtime proof required |
+|---|---|---|---|
+| Report-to-image loss | All 15 report sections map to the reference-matched visual manifest | `tests/visual-delivery-contract.test.mjs` asserts the execution contract | Inspect the real generated report and primary JPG |
+| Career Radar disappears | Career Radar scenarios, trade-offs, market status, evidence gaps and experiments remain separate from the competency radar | Prompt contract assertions | Confirm module contents in the actual JPG |
+| Fabricated/carryover values | Only the current canonical dataset may provide numeric values; null stays null | Prompt contract assertions | Compare each visible number against dataset fields |
+| Two unrelated output images | A requires one primary tall JPEG; no split to avoid layout work | Prompt contract assertions | Confirm one primary file and inspect its full canvas |
+| Valid file but failed design | JPEG decoding does not substitute for content parity and visual inspection | Prompt contract assertions | Inspect all sections, dense crops, clipping, overlap, legibility and reference hierarchy |
+
+The new checks are structural guardrails only. They do not render or inspect the actual image and must not be reported as runtime success.
