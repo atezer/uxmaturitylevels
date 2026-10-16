@@ -40,3 +40,26 @@ test('visual acceptance is conjunctive and failures block delivery', () => {
     'Any UNVERIFIED item must be disclosed'
   ]) assert.ok(prompt.toLowerCase().includes(expected.toLowerCase()), 'missing acceptance criterion: ' + expected);
 });
+
+
+test('Career Radar is release-blocking across written report, canonical data, and both visual formats', () => {
+  assert.match(prompt, /RELEASE-BLOCKING RULE — CAREER RADAR MUST SURVIVE THE REPORT-TO-VISUAL PIPELINE/);
+  assert.match(prompt, /Career Radar & Mentorship Synthesis/);
+  assert.match(prompt, /Written-report completeness gate/);
+  assert.match(prompt, /Canonical-data and visual mapping gate/);
+  assert.match(prompt, /Release-blocking acceptance checks/);
+  for (const expected of [
+    'past, present, near-future, and long-term career horizons',
+    'current market research with dated citations',
+    'an evidence ledger that separates direct evidence, inference, unknowns',
+    'a side-by-side comparison using the same decision criteria',
+    'best-supported next step, most personally aligned direction, and highest-uncertainty/highest-learning experiment',
+    'falsifiable 30–90-day career experiments',
+    'dedicated **Career Radar / Career Direction** module',
+    'a compact scenario matrix, evidence-led trajectory, or clearly structured editorial section',
+    'Never substitute one for the other',
+    'Any failed check blocks declaring the assessment or visual deliverable complete'
+  ]) assert.ok(prompt.includes(expected), 'missing Career Radar release requirement: ' + expected);
+  assert.match(prompt, /Career Radar is not confused with the eight-domain competency radar chart/);
+  assert.match(prompt, /actual JPG\/HTML artifact contains a readable Career Radar module/);
+});
