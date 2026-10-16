@@ -149,3 +149,18 @@ A PNG must be genuinely converted to JPEG before being labeled JPG. Never use a 
 The profile scenarios are qualitative calibration cases; the repository's automated checks validate that key guardrails and scenario coverage remain present, but they do **not** run an AI model or prove runtime classification accuracy. Model behavior still requires repeated evaluation against the scenarios.
 
 `ux-maturity-checklist.tsx` is a separate legacy six-level checklist. Its completion percentage is a task-completion heuristic, not a DMI maturity score, and its six levels do not map to DMI's five-level model. Do not use it as a substitute for the evidence-based assessment. Reconcile or retire it if the repository intends to maintain only one active maturity model.
+
+
+## Career Radar and mentorship synthesis
+
+Career direction is a mandatory analysis in the canonical prompt, not an optional add-on and not the eight-domain competency radar chart. The complete report includes an evidence-led career trajectory, current positioning, market signals with dates where research is performed, distinct scenarios and trade-offs, a mentor interpretation, falsifiable 30–90-day experiments, and a reassessment note. Missing evidence must be identified as unknown; it must not be fabricated.
+
+The report's **Section 9 — Longer-Term Career Development** is one of the 15 numbered report sections. The separate **Prompt Section 9 — Personal Goals, Motivation & Career Direction** is an additional synthesis instruction that connects career history, current goals, market context, scenarios, and mentorship. The two labels refer to different layers of the prompt and should not be conflated.
+
+For each visual format, Career Radar must have its own readable module populated from the same canonical data as the written report. It must not be removed merely because the evidence is incomplete. See the [feature-parity and regression audit](./FEATURE_PARITY_MATRIX.md).
+
+## Feature preservation and validation
+
+`FEATURE_PARITY_MATRIX.md` records mandatory DMI capabilities, their canonical sources, and the checks protecting them. Review it whenever the prompt, output format, scoring, career synthesis, or delivery workflow changes.
+
+GitHub Actions runs structural regression tests against repository text. Those tests help catch accidental deletion of required instructions; they do **not** prove an AI run completed the assessment, a JPG was rendered and inspected, or an HTML dashboard works in a browser. Report runtime checks as PASS only when they were actually performed; otherwise label them UNVERIFIED.

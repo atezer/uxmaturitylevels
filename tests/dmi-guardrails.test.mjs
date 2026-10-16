@@ -144,3 +144,31 @@ test('visual deliverable cannot be declared complete without actual artifact QA'
   assert.match(prompt, /A PNG must be genuinely converted to JPEG/i);
   assert.match(prompt, /Correct output type for the selected option/i);
 });
+
+
+test('README explains mandatory Career Radar and distinguishes the two Section 9 labels', () => {
+  assert.match(readme, /Career Radar and mentorship synthesis/);
+  assert.match(readme, /not the eight-domain competency radar chart/);
+  assert.match(readme, /Section 9 — Longer-Term Career Development/);
+  assert.match(readme, /Prompt Section 9 — Personal Goals, Motivation & Career Direction/);
+  assert.match(readme, /same canonical data as the written report/);
+});
+
+test('feature-parity matrix covers core capabilities and separates structural from runtime validation', async () => {
+  const matrix = await readFile(new URL('../FEATURE_PARITY_MATRIX.md', import.meta.url), 'utf8');
+  for (const expected of [
+    'All 15 written-report sections',
+    'Thinking / Execution / Impact',
+    'Separate maturity level and professional profile',
+    'Career Radar, market signals, scenario matrix, mentorship and experiments',
+    'JPG style, personal identity, data consistency and true JPEG',
+    'Interactive HTML as the alternative output',
+    'Graceful fallbacks for null/missing evidence',
+    'Legacy six-level checklist kept separate from DMI',
+    'Prompt and README changes must be reviewed together',
+    'CI cannot prove that an LLM followed a prompt',
+    'The Career Radar is distinct from the eight-domain competency radar chart'
+  ]) assert.ok(matrix.includes(expected), 'missing feature-parity coverage: ' + expected);
+  assert.match(readme, /FEATURE_PARITY_MATRIX\.md/);
+  assert.match(matrix, /They do not run a model, validate the quality of a personal assessment, generate a JPEG, or execute an HTML dashboard/);
+});

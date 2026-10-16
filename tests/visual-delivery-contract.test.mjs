@@ -63,3 +63,14 @@ test('Career Radar is release-blocking across written report, canonical data, an
   assert.match(prompt, /Career Radar is not confused with the eight-domain competency radar chart/);
   assert.match(prompt, /actual JPG\/HTML artifact contains a readable Career Radar module/);
 });
+
+
+test('global no-loss protocol preserves all mandatory features across edits and outputs', () => {
+  assert.match(prompt, /RELEASE-BLOCKING RULE — PRESERVE THE COMPLETE DMI FEATURE SET/);
+  assert.match(prompt, /The DMI feature set is cumulative/);
+  assert.match(prompt, /Never restore an old PR branch or commit wholesale/);
+  assert.match(prompt, /Update the feature-parity matrix, README, and structural regression tests in the same change/);
+  assert.match(prompt, /For JPG and HTML, map every relevant report feature to a destination/);
+  assert.match(prompt, /Structural checks:.*Written-report checks:.*Canonical-data checks:.*Artifact checks:.*Unverified checks:/s);
+  assert.match(prompt, /Any missing mandatory feature or failed applicable check blocks declaring the assessment or visual deliverable complete/);
+});
