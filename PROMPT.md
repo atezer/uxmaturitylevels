@@ -2189,3 +2189,46 @@ Any FAIL in items 1–8 blocks delivery. Any UNVERIFIED item must be disclosed a
 ## 6. Reference parity regression rule
 
 A visual that contains correct data but omits most of the reference's relevant sections or visual modules is still a failed deliverable. A technically valid JPEG that does not satisfy content completeness and reference parity is not accepted. The final delivery gate is conjunctive: data integrity AND section coverage AND reference parity AND actual-file verification must all pass.
+
+
+# RELEASE-BLOCKING RULE — CAREER RADAR MUST SURVIVE THE REPORT-TO-VISUAL PIPELINE
+
+The **Career Radar & Mentorship Synthesis** defined in Section 9 is mandatory content, not an optional interpretation or a synonym for the eight-domain competency radar chart. Apply this rule to every complete assessment and to both visual options (A: JPG/JPEG and B: interactive HTML).
+
+## 1. Written-report completeness gate
+
+Before declaring Stage 1 complete, verify that the written report explicitly includes the Career Radar output required by Section 9, including, when evidence supports it:
+- past, present, near-future, and long-term career horizons;
+- current market research with dated citations, or an explicit statement that live research was not performed;
+- an evidence ledger that separates direct evidence, inference, unknowns, and missing adoption/impact proof;
+- distinct career scenarios and a side-by-side comparison using the same decision criteria, or a clear explanation of why the available evidence does not support three scenarios;
+- separate conclusions for the best-supported next step, most personally aligned direction, and highest-uncertainty/highest-learning experiment;
+- falsifiable 30–90-day career experiments with success and disconfirming signals;
+- assumptions, trade-offs, mentor interpretation, and a dated reassessment note.
+
+Do not silently omit Career Radar because the report is long, scores are missing, market research is unavailable, or the user has not supplied explicit goals. In those cases, preserve the section and clearly mark the relevant information as unknown, provisional, or unverified. Never invent market evidence, personal goals, achievements, scores, probabilities, or career outcomes.
+
+## 2. Canonical-data and visual mapping gate
+
+When producing either visual option, include a dedicated **Career Radar / Career Direction** module in the visual requirements manifest and map it to the corresponding written-report section and source fields in the canonical data object. The module must communicate the supported career direction, scenario comparison, material evidence gaps/uncertainties, and next validation experiments at a legible level of detail. It may use a compact scenario matrix, evidence-led trajectory, or clearly structured editorial section; it must not be reduced to an unsupported one-line job-title recommendation.
+
+The visual must preserve the distinction between:
+- **Career Radar:** evidence-based career direction, scenarios, market signals, trade-offs, and experiments.
+- **Competency radar chart:** the eight DMI domains and their supported numeric scores.
+
+These are different analytical outputs. Never substitute one for the other. If the eight-domain scores are missing or null, do not fabricate a numeric competency polygon; show the prescribed evidence-aware fallback while still rendering the Career Radar module. If market data or scenario evidence is incomplete, show explicit uncertainty and the evidence needed next rather than removing the module.
+
+For JPG, use a taller canvas or a second clearly related page/artifact when necessary; do not make the text illegible or drop Career Radar to fit the existing layout. For HTML, provide a dedicated, navigable section with accessible headings and traceable content. In both formats, the module must be populated from the same canonical data object as the written assessment; do not independently invent or recalculate its claims during rendering.
+
+## 3. Release-blocking acceptance checks
+
+Before delivery, explicitly check all of the following:
+1. The complete written report contains the required Career Radar and mentorship synthesis.
+2. The canonical data object contains the available Career Radar findings and explicitly represents unknown/missing fields.
+3. The selected visual requirements manifest maps Career Radar to a destination.
+4. The actual JPG/HTML artifact contains a readable Career Radar module.
+5. Career claims are traceable to the written report and evidence; unsupported claims are labelled as assumptions or unknowns.
+6. The Career Radar is not confused with the eight-domain competency radar chart.
+7. The module has not been removed to save space or because evidence is incomplete.
+
+Any failed check blocks declaring the assessment or visual deliverable complete. If an actual artifact cannot be rendered or inspected in the current environment, state which checks remain unverified and do not claim the visual delivery gate passed.
