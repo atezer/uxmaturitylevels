@@ -1953,3 +1953,80 @@ Before delivery, check each applicable item against the written report and canon
 9. No required feature was removed merely to fit a layout.
 
 If any required item fails, do not present the output as complete. Fix it or clearly state the specific unresolved limitation. Feature parity and numerical integrity are both release-blocking quality gates.
+
+---
+
+# MANDATORY EXECUTION GUARANTEE — NO PARTIAL RUNS
+
+This rule is binding for every execution of this prompt. It supplements all existing requirements and does not replace or weaken any section, scoring rule, visual requirement, or user-confirmation gate.
+
+## 1. Execute, do not merely interpret
+
+When the user says "run", "execute", "çalıştır", or provides this prompt for execution, execute the entire workflow defined in this file.
+
+Reading, summarizing, explaining, or proposing improvements to this prompt does not count as execution. Do not replace the requested deliverable with an explanation of how it could be produced.
+
+## 2. Preserve the mandatory sequence
+
+Follow the existing execution protocol in its prescribed order:
+
+1. Collect and classify all legitimately available evidence.
+2. Complete all 15 required written assessment sections.
+3. Validate the final numerical dataset against the written report.
+4. Present the required A/B visual selection at the end of the completed report.
+5. Wait for the user's explicit selection.
+6. Generate only the selected artifact using the validated canonical dataset and required reference style.
+7. Inspect the actual artifact, validate it against the feature-parity checklist, and report the real validation results.
+
+Never skip a stage because the response is long, a tool is convenient, or visual generation seems easier.
+
+## 3. Completion gates
+
+A stage is complete only when its required deliverables and validation checks are complete. Before proceeding, verify that:
+
+- All required sections for the stage are present.
+- Evidence and scoring rules have been applied.
+- Unsupported values are marked unavailable rather than fabricated.
+- The canonical dataset is consistent with the written report.
+- The selected visual preserves every applicable required feature.
+
+Do not claim completion while any mandatory requirement remains unmet.
+
+## 4. No silent substitution
+
+Never substitute:
+
+- A summary for the complete assessment.
+- A synthetic or generic profile for the intended assessment subject.
+- A design description or generated mockup for the requested final artifact.
+- A partial infographic for the required complete visual.
+- An unvalidated dataset for the canonical assessment data.
+- A successful render for verified correctness.
+- An unavailable score with zero, an invented score, or an unsupported target.
+
+Use a synthetic profile only when the user or task explicitly specifies a synthetic subject. Keep that subject distinct from the real user's assessment.
+
+## 5. Output-length and capability failures
+
+If the complete deliverable cannot fit in one response, continue in subsequent responses without repeating completed sections unnecessarily or skipping remaining requirements.
+
+If a genuine tool or capability limitation prevents completion, identify the exact blocked step and its effect, preserve completed work, and state what remains incomplete. Never claim an operation, test, inspection, or conversion that did not actually occur.
+
+## 6. Final delivery gate
+
+Before declaring success, compare the selected artifact with the written report, canonical dataset, reference layout, and full feature-parity checklist.
+
+For JPG, verify that:
+- The file is an actual JPEG, not a renamed file.
+- All required sections are present in a sufficiently tall, legible composition.
+- All displayed values match the canonical dataset.
+- The actual image has been inspected for clipping, overlap, text errors, and readability.
+
+For HTML, verify that:
+- All required sections and canonical data are present.
+- Responsive layout and required interactions work to the extent tested.
+- No content has been silently omitted or changed.
+
+Report automated tests, manual inspection, failed checks, and unverified checks separately. If a release-blocking check fails, fix it before calling the artifact complete or explicitly identify the unresolved failure.
+
+**A task is complete only when the requested deliverable has been produced and its applicable completion checks have actually been performed.**
