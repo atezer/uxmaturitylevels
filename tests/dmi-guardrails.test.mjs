@@ -70,3 +70,37 @@ test('legacy checklist is explicitly independent of DMI maturity scoring', () =>
   assert.match(readme, /separate legacy six-level checklist/);
   assert.match(readme, /do not map to DMI's five-level model/);
 });
+
+
+test('visual-generation prompt defines pre-flight and a single canonical data contract', () => {
+  assert.match(prompt, /ADDITIONAL MANDATORY RULE — PRE-FLIGHT, DATA CONTRACT, AND FAILURE-SAFE VISUAL QA/);
+  assert.match(prompt, /Create a compact internal requirements matrix/);
+  assert.match(prompt, /Use one canonical data object derived from the completed written report and Section 13 final numerical dataset/);
+  assert.match(prompt, /Never coerce null, missing, or not-applicable values to zero/);
+  assert.match(prompt, /Keep rendering logic separate from assessment logic/);
+});
+
+test('missing evidence has a graceful visual fallback without fabricated scores', () => {
+  assert.match(prompt, /Missing scores must not produce fabricated charts/);
+  assert.match(prompt, /replace the chart area with a clear evidence map or competency overview/);
+  assert.match(prompt, /Show a target series only when supported by the canonical dataset/);
+  assert.match(prompt, /Do not remove required report sections merely because numeric data is incomplete/);
+});
+
+test('visual QA covers failure cases and forbids unverified success claims', () => {
+  for (const expected of [
+    'Fully populated, valid assessment data',
+    'All competency scores missing or null',
+    'Partially populated competency scores',
+    'Unsupported or missing target values',
+    'Conflict between the written report and final numerical dataset',
+    'Legacy/reference values attempting to appear in the current output',
+    'Turkish characters and punctuation',
+    'Text overflow, clipping, overlap, and small labels',
+    'Renderer or image-conversion failure',
+    'Correct output type for the selected option'
+  ]) assert.ok(prompt.includes(expected), 'missing visual validation scenario: ' + expected);
+  assert.match(prompt, /Do not claim that tests passed unless they were actually run/);
+  assert.match(prompt, /Do not claim 100% correctness/);
+  assert.match(prompt, /If a check cannot be performed, mark it unverified and disclose why/);
+});
