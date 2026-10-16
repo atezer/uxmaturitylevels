@@ -12,7 +12,7 @@ Designer Maturity Intelligence (DMI) helps designers assess professional capabil
 2. Copy the complete prompt into an AI chat that supports long-form instructions.
 3. Let the AI complete the written assessment and development plan before generating any visual.
 4. Review and challenge the evidence, scores, confidence labels, and recommendations.
-5. Only after the written report is complete, choose the JPG infographic (A) or interactive HTML dashboard (B).
+5. Only after the written report is complete, choose JPG infographic (A), interactive HTML dashboard file (B), or interactive in-chat dashboard (C) when using ChatGPT.
 
 ### Start in ChatGPT
 
@@ -39,7 +39,7 @@ The QR opens the prompt file; it does not automatically execute a prompt in ever
 - **Consistent scoring:** use the defined 0–10 scale and domain weighting where evidence supports a score.
 - **Development through application:** connect each priority to real work, feedback, artifacts, and review milestones.
 - **Sustainable scope:** no more than three active development priorities.
-- **Human confirmation for visuals:** finish the written report before asking the user to choose JPG (A) or interactive HTML (B).
+- **Human confirmation for visuals:** finish the written report before asking the user to choose JPG (A), interactive HTML (B), or the ChatGPT in-chat dashboard (C).
 - **Longitudinal continuity:** compare future evidence with the original baseline; never fabricate historical scores.
 
 ## The 15-section report
