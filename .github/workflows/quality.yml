@@ -19,4 +19,4 @@ jobs:
         with:
           node-version: 22
       - name: Validate prompt and calibration guardrails
-        run: node --test tests/dmi-guardrails.test.mjs
+        run: node --test tests/*.test.mjs
