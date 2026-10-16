@@ -122,12 +122,13 @@ Maintained by [@atezer](https://github.com/atezer).
 
 ## Visual output standards
 
-The complete written assessment and personal development plan must be delivered before asking the user to choose a visual. The only options are:
+The complete written assessment and personal development plan must be delivered before asking the user to choose a visual. The options are:
 
 - **A — JPG infographic:** a high-resolution, portrait editorial report using the canonical warm-neutral style.
-- **B — Interactive HTML dashboard (Claude recommended):** a responsive dashboard with competency scores, evidence/confidence details, development priorities, and the 30/60/90-day roadmap. Claude may handle this workflow more reliably, but support is not guaranteed in every AI environment.
+- **B — Interactive HTML dashboard file (Claude recommended):** a portable, responsive HTML file with competency scores, evidence/confidence details, development priorities, Career Radar, and the 30/60/90-day roadmap. The user can open it in a browser; execution and QA must be reported honestly.
+- **C — Interactive dashboard inside ChatGPT (recommended for ChatGPT users who want to stay in the conversation):** render the complete report using the chat interface's supported interactive components, such as section navigation, domain filters, scenario selectors, expandable evidence, checklists, and charts where available. This is a chat-native rendition, not a browser running the original HTML file. Preserve all 15 report sections, the canonical dataset, Career Radar, and the QA/status section; disclose any unsupported interactions and unverified parity.
 
-The user receives only the selected format unless they explicitly request both. Both formats must use the completed report's final numerical dataset as their **single source of truth**. Do not create a visual before the written assessment is complete.
+The user receives only the selected option unless they explicitly request more than one. A, B, and C must use the completed report's final numerical dataset as their **single source of truth**. Do not create a visual before the written assessment is complete. At the end of Stage 1, offer all three options and wait for the user's choice.
 
 ### Canonical JPG/JPEG style
 
