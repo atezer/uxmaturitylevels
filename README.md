@@ -164,3 +164,8 @@ For each visual format, Career Radar must have its own readable module populated
 `FEATURE_PARITY_MATRIX.md` records mandatory DMI capabilities, their canonical sources, and the checks protecting them. Review it whenever the prompt, output format, scoring, career synthesis, or delivery workflow changes.
 
 GitHub Actions runs structural regression tests against repository text. Those tests help catch accidental deletion of required instructions; they do **not** prove an AI run completed the assessment, a JPG was rendered and inspected, or an HTML dashboard works in a browser. Report runtime checks as PASS only when they were actually performed; otherwise label them UNVERIFIED.
+
+
+## Single-JPG end-to-end gate
+
+For A, the primary deliverable is **one tall, high-resolution JPEG** following the supplied dense portrait reference layout. The 15-section written report and final numerical dataset are validated before rendering. Career Radar is a separate analysis from the eight-domain competency chart. Do not carry over values from earlier assistant outputs or infer missing numeric scores. A valid JPEG alone is not accepted: all applicable reference modules, data traceability, full-image inspection, overlap/clipping checks, and actual JPEG decoding must be reported separately. See the single-JPG end-to-end execution rule in `PROMPT.md` and the regression coverage in `FEATURE_PARITY_MATRIX.md`.
