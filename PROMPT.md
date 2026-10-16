@@ -2266,3 +2266,45 @@ Repository tests establish only that specified structural guardrails remain pres
 - **Unverified checks:** every step not performed, with the reason.
 
 Never claim PASS for a check that was not performed. Any missing mandatory feature or failed applicable check blocks declaring the assessment or visual deliverable complete.
+
+
+# RELEASE-BLOCKING RULE — SINGLE-JPG END-TO-END EXECUTION AND REGRESSION GATE
+
+This rule addresses a recurring failure mode: repository tests pass while the delivered assessment loses mandatory written content, career analysis, canonical values, or the reference's information architecture. It applies to every A-option execution and takes precedence over convenience, brevity, or visual simplification.
+
+## A. Required execution order (do not skip or reorder)
+1. Retrieve the current canonical prompt, completed personal assessment, supplied reference image, and the final canonical numerical dataset. Do not treat previous assistant-generated visual values as authoritative unless they are explicitly present in that dataset.
+2. Complete and validate the full 15-section written report before rendering. Section 9 Career Radar & Mentorship Synthesis must contain the supported past/present/future career trajectory, A–D scenarios, trade-offs, personal-fit caveats, evidence gaps, mentor interpretation, and a falsifiable 7-day experiment plus 30–90-day experiments. Market evidence must have dated citations when actually researched; otherwise state that research was not performed.
+3. Build one canonical structured data object from the validated report and final dataset. Do not derive missing scores from prose, average domain values into an overall score, or carry over scores from a previous output. Missing or unverified numeric fields stay null.
+4. Build a reference manifest mapping every numbered module in the supplied reference to the report section and canonical fields. The reference in this workflow uses a dense, portrait, single-page editorial dashboard with 13 numbered modules; preserve its hierarchy, grid, information density, section numbering, evidence tables, career radar, roadmap, market status, limitations, summary, and footer. Adapt content only when evidence requires an explicit unknown/unavailable fallback.
+5. Render ONE tall, high-resolution JPEG file as the primary A deliverable. Do not split the main deliverable into multiple unrelated JPEGs to avoid layout work. Extend the canvas vertically if necessary. A supporting appendix may be added only when the user explicitly requests it; it does not replace the required single primary image.
+6. Keep Career Radar / Career Direction separate from the eight-domain competency radar. The Career Radar must include distinct scenarios and decision criteria, market research status, evidence gaps, next-proof requirements, and experiments. The competency module must use the exact eight domains in order. If domain-level numeric scores are not present in the canonical dataset, do not draw a numeric radar polygon; render an evidence-aware matrix and explicitly label the score chart unavailable. Do not silently substitute invented Thinking/Execution values.
+7. Validate the rendered artifact against the manifest and the supplied reference. Inspect the full image and crops at text-dense areas. Check clipped/overlapping text, glyphs, labels, section count, values, module presence, readable scale, and actual JPEG encoding. Regenerate and reinspect after any correction.
+8. Run the repository's relevant automated tests where execution access exists. Report them separately from visual/runtime checks. If test execution is unavailable, mark it UNVERIFIED and never imply it passed.
+
+## B. Mandatory single-image module checklist
+The primary JPG must include all applicable information purposes from the reference, with explicit module labels and readable content:
+1. Personal assessment header, date only if known, and overall score status.
+2. Professional identity/profile hypothesis and evidence basis.
+3. Career Radar with separate career scenarios and role-match status; no unsupported percentages.
+4. All eight competency domains in canonical order, with score/evidence status for each.
+5. Key insights: supported strengths, development gaps, and strategic opportunities—or explicit insufficient-evidence fallbacks.
+6. Evidence status matrix separating Thinking, Execution, Impact, direct evidence, inference, and unknowns where data exists.
+7. 0–90-day development roadmap with actionable stages.
+8. 3–12-month development direction, marked as a proposal rather than completed progress.
+9. Career positioning and alternative role scenarios, clearly distinguished from market benchmark.
+10. Market Radar with actual dated research citations or explicit “research not performed / data unavailable”.
+11. Personal development operating loop.
+12. Limitations, confidence, and evidence gaps.
+13. Conclusion, canonical data summary, and provenance/footer.
+
+These are content purposes, not permission to invent scores. Preserve the reference's numbering and grouping where useful, but include all 15 written-report sections in the report and map each section to a visual destination or an explicit compact representation in the manifest. No mandatory section may disappear merely to fit the canvas.
+
+## C. Release-blocking invariants
+- The final dataset is the sole source of numeric assessment values.
+- A profile hypothesis is not a maturity level; neither may be fabricated.
+- Missing evidence is unknown, not zero and not proof of low competence.
+- A proposed workflow is not implementation; implementation is not adoption; adoption is not measured impact.
+- A valid JPEG file is not a valid deliverable unless content parity and visual QA also pass.
+- If any mandatory section/module is absent, any value is untraceable, or any overlapping/clipped text remains, the artifact fails acceptance and must be corrected before delivery.
+- The final response must link to the actual generated primary JPG and list PASS/FAIL/UNVERIFIED for report completeness, data traceability, reference parity, actual JPEG decoding, visual inspection, and automated tests.

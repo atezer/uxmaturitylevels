@@ -74,3 +74,22 @@ test('global no-loss protocol preserves all mandatory features across edits and 
   assert.match(prompt, /Structural checks:.*Written-report checks:.*Canonical-data checks:.*Artifact checks:.*Unverified checks:/s);
   assert.match(prompt, /Any missing mandatory feature or failed applicable check blocks declaring the assessment or visual deliverable complete/);
 });
+
+
+test('A output requires one primary reference-matched JPG and prohibits invented score carryover', () => {
+  assert.match(prompt, /RELEASE-BLOCKING RULE — SINGLE-JPG END-TO-END EXECUTION AND REGRESSION GATE/);
+  assert.match(prompt, /Render ONE tall, high-resolution JPEG file as the primary A deliverable/);
+  assert.match(prompt, /Do not split the main deliverable into multiple unrelated JPEGs/);
+  assert.match(prompt, /Do not treat previous assistant-generated visual values as authoritative/);
+  assert.match(prompt, /do not draw a numeric radar polygon/i);
+  assert.match(prompt, /Career Radar must include distinct scenarios and decision criteria/);
+  assert.match(prompt, /If any mandatory section\/module is absent, any value is untraceable, or any overlapping\/clipped text remains, the artifact fails acceptance/);
+  for (const module of [
+    'Personal assessment header', 'Professional identity/profile hypothesis',
+    'Career Radar with separate career scenarios', 'All eight competency domains',
+    'Key insights', 'Evidence status matrix', '0–90-day development roadmap',
+    '3–12-month development direction', 'Career positioning and alternative role scenarios',
+    'Market Radar', 'Personal development operating loop', 'Limitations, confidence, and evidence gaps',
+    'Conclusion, canonical data summary, and provenance/footer'
+  ]) assert.ok(prompt.includes(module), 'missing single-JPG module requirement: ' + module);
+});
