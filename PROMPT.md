@@ -2030,3 +2030,104 @@ For HTML, verify that:
 Report automated tests, manual inspection, failed checks, and unverified checks separately. If a release-blocking check fails, fix it before calling the artifact complete or explicitly identify the unresolved failure.
 
 **A task is complete only when the requested deliverable has been produced and its applicable completion checks have actually been performed.**
+
+
+---
+
+# CRITICAL CORRECTION — INDIVIDUAL DMI, NOT CORPORATE UX MATURITY
+
+This section is authoritative and overrides any earlier example, visual description, reference image interpretation, or conflicting instruction in this file. It exists to prevent the exact failure where an individual Designer Maturity Intelligence report was rendered as an organizational UX maturity audit.
+
+## 1. Assessment subject must always be one individual professional
+
+The product is **Designer Maturity Intelligence (DMI): an evidence-based assessment of an individual designer's professional maturity, competencies, professional identity, career positioning, and personal development**.
+
+It is NOT:
+- an organization's UX maturity assessment;
+- a company's design maturity audit;
+- a UX team or department maturity model;
+- an organizational capability assessment;
+- a corporate transformation scorecard.
+
+Never assess or visualize the maturity of a company, department, team, design organization, or UX function unless the user explicitly requests a separate organizational assessment. The default subject is the individual person whose evidence is being assessed.
+
+## 2. Ban corporate UX maturity categories from the individual report
+
+Do not create competency rows, radar axes, scores, target values, or roadmap items such as:
+- Organizational Structure;
+- Budget & Resources;
+- Talent & Team Development;
+- Organizational Culture & Awareness;
+- UX Processes & Methods;
+- UX Strategy & Vision as a company-level maturity category;
+- UX Measurement & Sustainability as an organizational capability;
+- department-wide research maturity or organizational adoption maturity.
+
+These are examples of corporate UX maturity frameworks and must not replace the eight individual DMI competency domains in Section 5.
+
+Use the exact eight individual DMI domains, in this order, everywhere in the assessment and visual:
+1. Design Strategy & Systems Thinking
+2. User Research & Experience Quality
+3. Product Thinking & Business Impact
+4. Interaction & Visual Design
+5. Design Systems & DesignOps
+6. Technical & Delivery Capability
+7. AI, Automation & Innovation
+8. Leadership, Communication & Mentorship
+
+The report may discuss organizational outcomes only as evidence of the individual's contribution, and must distinguish individual contribution from team or company outcomes.
+
+## 3. Profile labels must describe an individual professional
+
+Use evidence-supported individual profile hypotheses, such as Research-led Designer, Product-oriented Designer, Craft & Interaction Designer, Systems & DesignOps Designer, AI-enabled Design Innovator, or Design Leader & Facilitator, as governed by Section 7A.
+
+Never label the person with a company maturity stage or present corporate maturity stages such as “Foundational / Developing / Integrated / Optimized” as the individual's DMI competency model. The DMI five-level professional maturity model in Section 7 is the only permitted maturity-level framework.
+
+A professional profile is not proof of a maturity level. A job title, years of experience, seniority label, or sophisticated vocabulary is not sufficient evidence for a high score or level.
+
+## 4. Visual reference governs style, not assessment meaning
+
+When a reference image is supplied, extract only its visual design characteristics unless the user explicitly identifies its data/content as authoritative:
+- portrait editorial composition;
+- warm off-white background;
+- navy typography;
+- restrained blue for supported current values;
+- magenta/pink for a supported target series;
+- limited green for evidenced strengths;
+- clear hierarchy, compact cards, readable labels, and consistent spacing.
+
+Do not copy the reference's subject, category labels, scores, benchmark claims, radar geometry, maturity stages, or text. Do not reinterpret a corporate UX maturity reference as permission to change the DMI subject. The current assessment and Section 13 canonical dataset determine all content.
+
+## 5. Individual-level score integrity
+
+Thinking, Execution, and Impact are dimensions of each of the eight individual competency domains, not corporate maturity categories.
+
+- Use only scores supported by the completed assessment and Section 13 canonical dataset.
+- Never infer a numerical Execution or Impact score from a proposal, discussion, or tool familiarity alone.
+- Do not display an invented radar polygon or score bar for a missing/null value.
+- Do not generate a target profile, pink target polygon, target score, role-match percentage, market benchmark, or overall maturity score unless its value and method are explicitly supported by the canonical dataset and the rules elsewhere in this prompt.
+- If values are incomplete, retain the individual competency label and show an explicit state such as “Kanıt yetersiz”, “Hesaplanmadı”, or “Hedef verisi yok”. Missing evidence is not zero and does not prove low ability.
+- A radar chart is optional when the data is insufficient; an evidence/competency map is the required fallback. Never fabricate a radar just to fill the layout.
+- Keep the professional profile, maturity level, overall score, target/benchmark status, and evidence confidence as separate fields. Do not use one as a substitute for another.
+
+## 6. Required pre-render subject and category validation
+
+Before generating a JPG or HTML visual, perform this blocking check against the canonical dataset:
+
+1. Confirm the title identifies “Designer Maturity Intelligence (DMI)” or “Kişisel Profesyonel Olgunluk Değerlendirmesi”, not “UX Olgunluk Değerlendirmesi” or an organizational UX maturity report.
+2. Confirm the subject is an individual designer, not a company, department, or team.
+3. Confirm all eight competency domains exactly match Section 5 and remain in the required order.
+4. Confirm no corporate category (for example budget, organizational structure, team development, or corporate UX processes) appears as a scored DMI domain.
+5. Confirm every displayed number, radar point, bar, target, label, profile claim, date, and benchmark is traceable to the canonical dataset.
+6. Confirm unsupported scores remain unavailable and are not rendered as zero or implied through chart geometry.
+7. Confirm the report describes individual evidence, and any team/business outcome is explicitly attributed only to the extent the evidence supports.
+
+If any check fails, do not deliver the image as complete. Correct the data mapping and regenerate the artifact, then inspect the actual final image. Do not rely on prompt wording or successful rendering alone as proof of compliance.
+
+## 7. Explicit regression test for the known failure
+
+A visual fails this test if it contains any of the following as scored individual DMI domains: “Bütçe ve Kaynaklar”, “Organizasyonel Yapı”, “Yetenek ve Ekip Gelişimi”, “UX Süreçleri ve Yöntemler” as corporate capability, or a 15-category corporate UX maturity chart.
+
+Expected result: the visual assesses the individual through the eight DMI domains; presents the supported individual profile and evidence status; keeps overall maturity and role match uncalculated when evidence is insufficient; and shows the personal development roadmap. The reference may influence only the visual styling.
+
+This regression test is release-blocking for both JPG and HTML.
