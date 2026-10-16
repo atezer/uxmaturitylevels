@@ -47,7 +47,7 @@ Use the information legitimately available in the current conversation, relevant
 
 Do not invent professional achievements, project outcomes, metrics, responsibilities, or experiences.
 
-**The complete written assessment and personal development plan are the primary deliverables. The selected visual artifact—JPG infographic (A) or interactive HTML dashboard (B)—is a separate, subsequent deliverable.**
+**The complete written assessment and personal development plan are the primary deliverables. The selected visual deliverable—JPG infographic (A), interactive HTML dashboard file (B), or interactive in-chat dashboard for ChatGPT (C)—is a separate, subsequent deliverable.**
 
 # 2. MANDATORY EXECUTION PROTOCOL
 
