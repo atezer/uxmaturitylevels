@@ -2131,3 +2131,8 @@ A visual fails this test if it contains any of the following as scored individua
 Expected result: the visual assesses the individual through the eight DMI domains; presents the supported individual profile and evidence status; keeps overall maturity and role match uncalculated when evidence is insufficient; and shows the personal development roadmap. The reference may influence only the visual styling.
 
 This regression test is release-blocking for both JPG and HTML.
+
+
+## JPEG artifact verification — mandatory
+
+A PNG must be genuinely converted to JPEG before the deliverable is labelled or presented as JPG. Verify the output file's actual JPEG encoding and inspect the final image; changing a filename extension is not conversion.
