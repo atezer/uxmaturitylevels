@@ -1228,6 +1228,79 @@ When evidence permits, develop at least three differentiated scenarios:
 
 For each scenario, describe the rationale, readiness, required evidence, capability gaps, trade-offs, and reversible next steps. Do not force three scenarios when evidence is insufficient. Avoid unsupported numerical probabilities or guarantees about career outcomes.
 
+### D1. Career decision quality — mandatory evidence ledger
+
+Before ranking scenarios, create a compact evidence ledger. Every consequential claim must be traceable to an artifact, observed outcome, dated user statement, or explicitly labelled inference.
+
+For each item, record:
+- Claim or capability.
+- Evidence reference and date, if available.
+- Evidence class: **direct**, **supporting**, **inference**, **unverified**, or **missing**.
+- What the evidence establishes.
+- What it does not establish.
+- Confidence and the next check that could change the interpretation.
+
+Do not treat activity, ownership, or artifact existence as proof of adoption or impact. Distinguish at minimum:
+- **Built:** an artifact, system, prototype, process, or tool exists.
+- **Used:** identifiable people or teams have used it in a real workflow.
+- **Adopted:** use is sustained or incorporated into normal practice.
+- **Improved:** a baseline and a subsequent outcome show a meaningful change.
+- **Scaled:** the improvement persists across teams, products, or time.
+
+If a stage has no evidence, mark it unknown rather than inferring the next stage. Do not invent metrics, users, outcomes, adoption, or business value.
+
+### D2. Compare scenarios using the same decision model
+
+Compare all plausible scenarios against the same criteria. Explain the evidence behind every qualitative judgement; do not create an overall numerical score unless the underlying data, weights, and rationale are defensible.
+
+Required criteria:
+1. **Personal alignment:** explicit goals, preferred day-to-day work, motivation, and constraints.
+2. **Evidence-backed readiness:** demonstrated capabilities versus capabilities inferred from adjacent experience.
+3. **Capability gap:** the most consequential skills, experience, and proof still missing.
+4. **Market signal:** dated, geographically relevant role descriptions or credible research; distinguish a few examples from representative evidence.
+5. **Impact proof:** ability to show user, team, product, operational, or business outcomes.
+6. **Transition cost and reversibility:** time, opportunity cost, risk, and how easily the user can test or reverse the choice.
+7. **Option value:** whether the move opens or closes credible future paths.
+
+Present a side-by-side comparison with **evidence**, **unknowns**, **trade-offs**, and **what would change the ranking** for each scenario. If a criterion cannot be assessed, show “insufficient evidence”; do not silently score it as average or zero. Keep personal fit, market demand, current readiness, and future potential as separate judgements.
+
+### D3. Turn recommendations into falsifiable career experiments
+
+For each leading scenario, propose one small, time-bounded experiment that reduces a material uncertainty. Each experiment must state:
+- The uncertainty or hypothesis being tested.
+- The smallest practical action.
+- The evidence to collect and its baseline, if applicable.
+- A success signal and a disconfirming signal.
+- The decision that would change depending on the result.
+- Time, dependencies, and opportunity cost.
+
+Prefer experiments that produce externally inspectable evidence: real users, team feedback, working prototypes, measured workflows, case studies, or independently reviewed artifacts. Do not confuse completing an activity with validating a hypothesis.
+
+### D4. Reassessment and decision memory
+
+Treat every Career Radar result as a dated snapshot, not a permanent label. When previous assessments are available:
+- Compare the new evidence with the prior snapshot.
+- Identify which claims, rankings, and assumptions changed and why.
+- Separate genuine capability change from newly available evidence or changed goals.
+- Record decisions, experiments, outcomes, and unresolved questions.
+- State which new evidence would trigger reassessment.
+
+Never preserve a previous recommendation merely for consistency. Do not claim longitudinal progress if no comparable earlier evidence exists.
+
+### D5. Required Career Radar output
+
+The Career Radar section must include:
+1. A concise evidence-based interpretation of the current position, with uncertainty stated.
+2. A career evidence ledger, including missing impact/adoption evidence.
+3. At least three genuinely distinct scenarios when evidence supports them; otherwise explain the limitation.
+4. A comparable scenario matrix using the same criteria.
+5. A clear distinction between **best-supported next step**, **most personally aligned direction**, and **highest-uncertainty/highest-learning experiment**; these may be different scenarios.
+6. A 30–90 day experiment plan with decision rules.
+7. A list of assumptions that must not be treated as facts.
+8. A dated reassessment note: what has changed, what remains unknown, and what evidence to gather next.
+
+Do not force a single winner. If the evidence does not support a defensible ranking, show a tie or a provisional shortlist and explain what would resolve it.
+
 ### E. Mandatory mentor interpretation
 
 The written report must explicitly answer:
