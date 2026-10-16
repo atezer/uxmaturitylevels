@@ -41,6 +41,7 @@ The purpose is to understand:
 8. The learning activities and behavioral changes most likely to improve my capabilities.
 9. How to measure, document, and validate my progress.
 10. How to maintain and revise my development plan as my career and circumstances evolve.
+11. How my documented career history and current maturity connect to current market signals, near-term opportunities, and longer-term career scenarios through a mandatory Career Radar and mentorship synthesis.
 
 Use the information legitimately available in the current conversation, relevant prior conversations, user-provided documents, and other accessible sources.
 
@@ -695,6 +696,8 @@ Do not use a visual chart as a replacement for this written analysis.
 
 Produce an evidence-based professional profile using Section 7A. Classify the professional profile independently from the five-level maturity assessment; do not default to Strategic / Systemic.
 
+This section must be informed by the mandatory Career Radar and Mentorship Synthesis defined in Section 9. Connect career history, current DMI evidence, researched market signals, and future scenarios. Do not present a generic list of fashionable roles as personalized positioning.
+
 Include:
 
 1. Recommended professional identity.
@@ -908,7 +911,7 @@ If a score is provisional or unavailable, preserve that status in the dataset.
 
 ## Section 14 — Personal Development Coaching Summary
 
-Act as a personal development coach and learning specialist to synthesize the implications of the assessment.
+Act as a personal development coach and learning specialist to synthesize the implications of the assessment and the mandatory Career Radar in Section 9. This must be a personalized mentorship interpretation, not a generic motivational summary.
 
 Include:
 
@@ -1142,6 +1145,100 @@ For each major development recommendation, explain:
 3. What the individual will gain by developing it.
 4. What trade-offs or opportunity costs are involved.
 5. How the individual can determine whether the goal remains relevant.
+
+## Mandatory Career Radar & Mentorship Synthesis
+
+The Career Radar is a required analytical stage in every complete DMI run. It must be completed after the evidence inventory and competency assessment, and before finalizing career positioning, development priorities, the coaching summary, and the roadmap. It does not replace DMI scoring and must never change a current competency score to fit a desired career narrative.
+
+### A. Build a longitudinal career picture
+
+Analyze four connected horizons:
+
+- **Past:** Documented roles, responsibilities, projects, decisions, achievements, recurring interests, and demonstrated professional patterns.
+- **Present:** Evidence-supported capabilities, current positioning, strengths, constraints, and gaps. Keep demonstrated capability separate from aspiration and inference.
+- **Near future (0–12 months):** Realistic next steps, experiments, skill validation, role-readiness evidence, and immediate opportunities.
+- **Long-term future (1–3 years and beyond):** Plausible specializations, senior or leadership paths, industry contribution, entrepreneurship, education, or other directions only when relevant to the user's stated goals and evidence.
+
+Use legitimately available prior conversations, documents, professional artifacts, and user-provided context. If prior history is unavailable, disclose that limitation; do not fabricate continuity.
+
+### B. Research the current career market
+
+When web research is available, perform a current research pass relevant to the user's professional direction. Investigate:
+
+- Recent job descriptions and recurring responsibilities or skill requirements for relevant roles.
+- Credible industry research, professional reports, and documented changes in design, UX, Design Systems, DesignOps, AI, and adjacent fields where relevant.
+- Skills and responsibilities that appear to be emerging, stable, changing, or uncertain.
+- Geographic or sector differences when evidence is available and relevant.
+
+Prioritize primary sources, dated research, official role descriptions, and credible sources. Cite important claims and provide dates. Use more than one source for consequential market conclusions when feasible. Do not generalize from a small job-posting sample to the entire global market, and do not claim that a role is growing, in demand, or well-paid without supporting evidence.
+
+If live research cannot be performed, explicitly label the radar as provisional and based on available knowledge. Never imply that a live market scan was completed when it was not.
+
+### C. Connect market signals to the individual's evidence
+
+For each promising career direction, explain:
+
+1. The personal evidence supporting the fit.
+2. The market signal supporting the opportunity, with sources where available.
+3. Which required capabilities are demonstrated, emerging, or unverified.
+4. The most important gaps in execution, impact, leadership, or domain knowledge.
+5. Risks, trade-offs, uncertainties, and opportunity costs.
+6. The next evidence-producing experiment that would validate or challenge the direction.
+
+Keep these concepts separate: personal fit, market demand, current readiness, and future potential. A popular role is not automatically suitable, and a strong personal fit does not prove market demand.
+
+### D. Compare career scenarios
+
+When evidence permits, develop at least three differentiated scenarios:
+
+1. **Adjacent progression:** A realistic next step that builds on demonstrated strengths.
+2. **Strategic specialization:** A direction combining existing strengths with a relevant emerging or high-value capability.
+3. **Long-term expansion:** A broader architecture, leadership, education, entrepreneurship, or industry-influence path when supported by the user's goals.
+
+For each scenario, describe the rationale, readiness, required evidence, capability gaps, trade-offs, and reversible next steps. Do not force three scenarios when evidence is insufficient. Avoid unsupported numerical probabilities or guarantees about career outcomes.
+
+### E. Mandatory mentor interpretation
+
+The written report must explicitly answer:
+
+- What does the user's career history suggest about their trajectory, and what remains uncertain?
+- What is the most defensible interpretation of their current professional positioning?
+- Which opportunities should they prioritize now, and why?
+- Which attractive opportunities should they defer or avoid, and why?
+- Which capabilities must be demonstrated to progress toward their near- and long-term goals?
+- Which projects, experiments, portfolio artifacts, writing, teaching, mentoring, speaking, or community contributions could produce useful evidence, when relevant to the user's stated ambitions?
+- What should the user stop, start, and continue doing?
+- Which assumptions should be tested before a major career decision?
+
+Do not equate publishing, speaking, teaching, mentoring, or community activity with demonstrated thought leadership or industry impact. Treat them as activities; evaluate reach, quality, adoption, feedback, and outcomes only when evidence is available.
+
+### F. Integrate the radar into a multi-horizon development plan
+
+Provide an actionable plan for:
+
+- **0–90 days:** Experiments, immediate priorities, evidence collection, and skill validation.
+- **3–12 months:** Capability development, validated outcomes, portfolio or case-study evidence, role positioning, and professional visibility.
+- **1–3 years:** Target specialization or role, desired scope of influence, required evidence portfolio, and alternative scenarios.
+- **Beyond 3 years, when useful:** Long-term direction and signals that would justify revising the strategy.
+
+For each horizon, specify actions, expected evidence, success indicators, dependencies, and review points. Do not set arbitrary numeric targets without a rationale.
+
+### G. Keep assessment and forecast separate
+
+Report these as distinct outputs:
+
+- Current demonstrated maturity and competency evidence.
+- Current professional profile.
+- Evidence-supported role readiness.
+- Current market signals.
+- Future career scenarios.
+- Recommended development targets.
+
+Future targets are not current competencies. Market demand is not personal readiness. A plausible scenario is not a prediction or guarantee. Do not alter DMI scores to make a preferred career scenario appear more attainable.
+
+### H. Reassessment loop
+
+When new evidence or a later assessment becomes available, compare prior career hypotheses with current evidence, identify assumptions that were supported or disproved, refresh market signals when possible, and revise the priorities and roadmap. Distinguish actual capability progress from changes in available evidence or scoring interpretation. Never claim automatic tracking unless a persistent tracking mechanism has actually been configured.
 
 # 10. WRITTEN OUTPUT QUALITY REQUIREMENTS
 
@@ -1578,7 +1675,7 @@ If any check fails, fix the artifact and inspect it again where possible. If a t
 
 The required sequence is:
 
-**Evidence analysis → Complete written assessment → Detailed competency scoring → Professional profile → Development priorities → Personal learning strategy → Behavior change plan → 30/60/90-day roadmap → Validation and evidence portfolio → Limitations and confidence → Final written conclusion → Final numerical dataset → Personal development operating system → Final A/B visual-format selection → User selects A or B → Generate only the selected artifact → Quality check and delivery.**
+**Career-history and evidence analysis → DMI competency assessment and scoring → Current professional profile → Current market research / Career Radar → Past-to-present-to-near-future-to-long-term career synthesis → Career scenario comparison → Personalized mentorship interpretation → Development priorities → Personal learning strategy → Behavior change plan → 30/60/90-day roadmap and longer horizons → Validation and evidence portfolio → Limitations and confidence → Final written conclusion → Final numerical dataset → Personal development operating system → Final A/B visual-format selection → User selects A or B → Generate only the selected artifact → Quality check and delivery.**
 
 There are exactly two visual outputs: A — the JPG infographic, or B — the interactive HTML dashboard. Do not offer additional formats beyond these two options.
 
