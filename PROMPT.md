@@ -2136,3 +2136,56 @@ This regression test is release-blocking for both JPG and HTML.
 ## JPEG artifact verification — mandatory
 
 A PNG must be genuinely converted to JPEG before the deliverable is labelled or presented as JPG. Verify the output file's actual JPEG encoding and inspect the final image; changing a filename extension is not conversion.
+
+# RELEASE-BLOCKING VISUAL DELIVERY CONTRACT — REFERENCE PARITY AND DATA TRACEABILITY
+
+This contract is mandatory for every JPG or HTML visual run. It supplements the existing assessment and visual rules; it does not replace the canonical report, Section 13 dataset, or individual-DMI safeguards.
+
+## 1. Build a visual requirements manifest before rendering
+
+Before creating the artifact, create a requirements manifest from (a) the supplied reference image, (b) the completed written report, and (c) the canonical Section 13 dataset. For every reference section or visual module, record:
+- reference section identifier and purpose;
+- whether it applies to this individual assessment;
+- the exact source report section/data fields that will populate it;
+- the intended visual representation (card, table, chart, evidence matrix, timeline, or explanatory text);
+- the expected fallback when its source data is missing;
+- a final verification status.
+
+Do not use a generic summary as a substitute for this manifest. The manifest is an internal production artifact and should be included in validation output when useful.
+
+## 2. Reference parity means structure and visual language, not copied data
+
+Preserve the reference's relevant information architecture, relative visual hierarchy, portrait editorial composition, density, section numbering/grouping where appropriate, card/table rhythm, typography hierarchy, spacing, and visual variety. Adapt the number and content of modules only when required by the actual assessment and canonical data. Never copy reference-person claims, scores, role labels, benchmark values, or unsupported categories.
+
+Do not silently reduce a multi-section reference to a short summary infographic. If a module is inapplicable, retain its informational purpose using an evidence-aware fallback or explicitly document why it is omitted. Missing numeric data is not a reason to remove the section: show “Hesaplanmadı”, “Kanıt yetersiz”, “Veri yok”, or a similarly precise status where appropriate.
+
+## 3. Canonical data contract
+
+Create one canonical structured data object from the final written report and Section 13 dataset. Every visible label, value, score, profile hypothesis, date, evidence status, insight, roadmap item, and benchmark state must map to that object or to an explicitly identified report passage. Rendering code must not invent, infer, or silently rewrite assessment values. Keep assessment logic separate from layout/rendering logic.
+
+For each displayed datum, retain traceability to its source field or report section. If the report and final dataset conflict, stop rendering and resolve the conflict before proceeding. Null, missing, unsupported, and not-applicable values must remain distinct and must never be coerced to zero.
+
+## 4. Use deterministic rendering for dense text and data
+
+For data-dense reports, prefer a deterministic HTML/SVG or equivalent template renderer populated by the canonical data object, then convert the rendered artifact to the requested output format. Do not rely on an image-generation model to accurately typeset long passages, tables, exact scores, or all required sections. Image generation may be used for decorative assets only when it does not alter authoritative text or data.
+
+The renderer must preserve Turkish characters, keep text readable at the intended output size, and use a portrait canvas tall enough for all applicable sections. Do not shrink typography or omit content merely to force the reference into a fixed canvas.
+
+## 5. Release-blocking acceptance checks
+
+Before delivery, produce a checklist/report that marks each item PASS, FAIL, or UNVERIFIED:
+1. All applicable reference modules have a mapped destination or a documented reason for adaptation/omission.
+2. All required DMI sections and all eight competency domains are present in the correct order.
+3. The visible content and values are traceable to the written report and canonical dataset.
+4. No unsupported scores, target series, role-match percentages, benchmarks, or profile claims were introduced.
+5. Missing data is visibly represented as unknown/unavailable, not zero or fabricated chart geometry.
+6. Visual hierarchy, section density, tables/charts, and layout meaningfully reflect the supplied reference.
+7. The actual final image has been opened and inspected for clipping, overlap, text truncation, glyph/encoding issues, and legibility.
+8. The file is the requested real format and can be decoded; for JPG, verify JPEG encoding rather than trusting the extension.
+9. Automated checks and manual checks are reported separately. Do not claim checks passed unless they were actually performed.
+
+Any FAIL in items 1–8 blocks delivery. Any UNVERIFIED item must be disclosed and must not be represented as passed. Fix failures and regenerate/reinspect before delivery whenever the available tools permit it. If a check cannot be performed, clearly state the exact limitation and do not claim full completion.
+
+## 6. Reference parity regression rule
+
+A visual that contains correct data but omits most of the reference's relevant sections or visual modules is still a failed deliverable. A technically valid JPEG that does not satisfy content completeness and reference parity is not accepted. The final delivery gate is conjunctive: data integrity AND section coverage AND reference parity AND actual-file verification must all pass.
